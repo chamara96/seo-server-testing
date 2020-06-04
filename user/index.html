@@ -71,6 +71,7 @@
 
    <!-- <link rel="stylesheet" href="bb/style.css"> -->
    <style>
+
       .zoom {
          transition: transform .2s;
       }
@@ -78,6 +79,10 @@
       #feature:hover {
          transition: .3s;
          transform: scale(1.5);
+      }
+
+      .post-body::-webkit-scrollbar {
+         display: none;
       }
 
       .img-fluid:hover {
@@ -93,6 +98,7 @@
          font-family: sans-serif, arial;
          margin: 0;
          scroll-snap-align: start;
+         padding: 0px 0px 30px 0px; 
       }
 
       html {
@@ -502,7 +508,7 @@
    </header>
 
    <!-- ******Promo Section****** -->
-   <section id="promo" class="promo section gradient-9">
+   <section id="promo" class="promo section gradient-9" style="padding-top: 50px">
       <div class="container">
          <div class="row" style="padding-top: 50px; justify-content: space-evenly">
             <div class="intro-area col-lg-4 col-12">
@@ -1024,7 +1030,7 @@
    </section>
 
 
-   <footer id="tw-footer" menu-sec="sec-08" data-color="#fff" class="section tw-footer">
+   <footer id="tw-footer" menu-sec="sec-08" data-color="#fff" class="section tw-footer" style="padding-top: 75px">
       <div class="container">
          <div class="footer-contact">
             <div class="row">

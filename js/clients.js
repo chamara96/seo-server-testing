@@ -9,7 +9,7 @@ $(document).ready(function () {
         dataType: 'json', // added data type
         success: function (res) {
             merchants = res;
-            console.log(merchants)
+
             $("#client-list").empty();
             var html = '';
             for (let i = 0; i < merchants.length; i++) {
@@ -19,7 +19,7 @@ $(document).ready(function () {
 
             $('.customer-logos').slick({
                 rows: 3,
-                slidesPerRow: 4,
+                slidesPerRow: 5,
                 /*slidesToShow: 5,
                 slidesToScroll: 5,*/
                 autoplay: true,
@@ -56,13 +56,15 @@ $(document).ready(function () {
             $("#blog-list").empty();
             var html = '';
             for (let j = 0; j < blogs.length; j++) {
+                /*var name = blogs[j].name.split(' ')
+                console.log(name)*/
                 html = `<div class="col-lg-4 col-md-12">
             <div class="tw-latest-post" style="text-align:left">
                 <div class="latest-post-media text-center">
                     <img src="http://blog.chamaralabs.com/${blogs[j].featured_image}" alt="blog_image_one" class="img-fluid" style="height: 200px">
                 </div>
                 <!-- End Latest Post Media -->
-                <div class="post-body">
+                <div class="post-body" style="height: 500px; overflow-y : scroll">
                     <div class="post-item-date">
                         <div class="post-date">
                             <span class="date">${blogs[j].published_at.substring(8,10)}</span>
