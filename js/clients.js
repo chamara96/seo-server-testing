@@ -3,7 +3,8 @@ $(document).ready(function () {
     var merchants = [];
 
     $.ajax({
-        url: "http://127.0.0.1:5500/payloads/clients.json",
+        url: "http://blog.chamaralabs.com/imagecarousel",
+        // url: "http://127.0.0.1:5500/payloads/clients.json",
         type: 'GET',
         dataType: 'json', // added data type
         success: function (res) {
@@ -12,7 +13,7 @@ $(document).ready(function () {
             $("#client-list").empty();
             var html = '';
             for (let i = 0; i < merchants.length; i++) {
-                html = `<a href="${merchants[i].web_url}" class="slide"><img src="${merchants[i].image_url}"></a>`;
+                html = `<a href="${merchants[i].web_url}" class="slide"><img src="http://blog.chamaralabs.com/${merchants[i].image_url}"></a>`;
                 $("#client-list").append(html);
             }
 
@@ -47,7 +48,7 @@ $(document).ready(function () {
     ];
     var blogs = [];
     $.ajax({
-        url: "http://127.0.0.1:5500/payloads/blogs.json",
+        url: "http://blog.chamaralabs.com/article/posts/index_data",
         type: 'GET',
         dataType: 'json', // added data type
         success: function (res) {
@@ -58,7 +59,7 @@ $(document).ready(function () {
                 html = `<div class="col-lg-4 col-md-12">
             <div class="tw-latest-post" style="text-align:left">
                 <div class="latest-post-media text-center">
-                    <img src="${blogs[j].featured_image}" alt="blog_image_one" class="img-fluid" style="height: 200px">
+                    <img src="http://blog.chamaralabs.com/${blogs[j].featured_image}" alt="blog_image_one" class="img-fluid" style="height: 200px">
                 </div>
                 <!-- End Latest Post Media -->
                 <div class="post-body">
