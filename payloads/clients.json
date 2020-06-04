@@ -1,0 +1,146 @@
+[
+    {
+        "id": 3,
+        "image_url": "http://blog.chamaralabs.com/storage/carousel/1591023802.png",
+        "position": "1",
+        "web_url": "https://www.instagram.com",
+        "title": "Instagram",
+        "created_at": "2020-06-01T15:03:22.000000Z",
+        "updated_at": "2020-06-01T15:06:16.000000Z"
+    },
+    {
+        "id": 2,
+        "image_url": "http://blog.chamaralabs.com/storage/carousel/1591023759.jpg",
+        "position": "2",
+        "web_url": "https://www.youtube.com",
+        "title": "YouTube",
+        "created_at": "2020-06-01T15:02:39.000000Z",
+        "updated_at": "2020-06-01T15:02:39.000000Z"
+    },
+    {
+        "id": 1,
+        "image_url": "http://blog.chamaralabs.com/storage/carousel/1591023594.png",
+        "position": "3",
+        "web_url": "https://www.facebook.com",
+        "title": "Facebook",
+        "created_at": "2020-06-01T14:59:54.000000Z",
+        "updated_at": "2020-06-01T15:06:16.000000Z"
+    },
+    {
+        "id": 4,
+        "image_url": "http://blog.chamaralabs.com/storage/carousel/1591023944.png",
+        "position": "4",
+        "web_url": "https://web.whatsapp.com",
+        "title": "WhatsApp",
+        "created_at": "2020-06-01T15:05:44.000000Z",
+        "updated_at": "2020-06-01T15:05:44.000000Z"
+    },
+    {
+        "id": 3,
+        "image_url": "http://blog.chamaralabs.com/storage/carousel/1591023802.png",
+        "position": "1",
+        "web_url": "https://www.instagram.com",
+        "title": "Instagram",
+        "created_at": "2020-06-01T15:03:22.000000Z",
+        "updated_at": "2020-06-01T15:06:16.000000Z"
+    },
+    {
+        "id": 2,
+        "image_url": "http://blog.chamaralabs.com/storage/carousel/1591023759.jpg",
+        "position": "2",
+        "web_url": "https://www.youtube.com",
+        "title": "YouTube",
+        "created_at": "2020-06-01T15:02:39.000000Z",
+        "updated_at": "2020-06-01T15:02:39.000000Z"
+    },
+    {
+        "id": 1,
+        "image_url": "http://blog.chamaralabs.com/storage/carousel/1591023594.png",
+        "position": "3",
+        "web_url": "https://www.facebook.com",
+        "title": "Facebook",
+        "created_at": "2020-06-01T14:59:54.000000Z",
+        "updated_at": "2020-06-01T15:06:16.000000Z"
+    },
+    {
+        "id": 4,
+        "image_url": "http://blog.chamaralabs.com/storage/carousel/1591023944.png",
+        "position": "4",
+        "web_url": "https://web.whatsapp.com",
+        "title": "WhatsApp",
+        "created_at": "2020-06-01T15:05:44.000000Z",
+        "updated_at": "2020-06-01T15:05:44.000000Z"
+    },
+    {
+        "id": 3,
+        "image_url": "http://blog.chamaralabs.com/storage/carousel/1591023802.png",
+        "position": "1",
+        "web_url": "https://www.instagram.com",
+        "title": "Instagram",
+        "created_at": "2020-06-01T15:03:22.000000Z",
+        "updated_at": "2020-06-01T15:06:16.000000Z"
+    },
+    {
+        "id": 2,
+        "image_url": "http://blog.chamaralabs.com/storage/carousel/1591023759.jpg",
+        "position": "2",
+        "web_url": "https://www.youtube.com",
+        "title": "YouTube",
+        "created_at": "2020-06-01T15:02:39.000000Z",
+        "updated_at": "2020-06-01T15:02:39.000000Z"
+    },
+    {
+        "id": 1,
+        "image_url": "http://blog.chamaralabs.com/storage/carousel/1591023594.png",
+        "position": "3",
+        "web_url": "https://www.facebook.com",
+        "title": "Facebook",
+        "created_at": "2020-06-01T14:59:54.000000Z",
+        "updated_at": "2020-06-01T15:06:16.000000Z"
+    },
+    {
+        "id": 4,
+        "image_url": "http://blog.chamaralabs.com/storage/carousel/1591023944.png",
+        "position": "4",
+        "web_url": "https://web.whatsapp.com",
+        "title": "WhatsApp",
+        "created_at": "2020-06-01T15:05:44.000000Z",
+        "updated_at": "2020-06-01T15:05:44.000000Z"
+    },
+    {
+        "id": 3,
+        "image_url": "http://blog.chamaralabs.com/storage/carousel/1591023802.png",
+        "position": "1",
+        "web_url": "https://www.instagram.com",
+        "title": "Instagram",
+        "created_at": "2020-06-01T15:03:22.000000Z",
+        "updated_at": "2020-06-01T15:06:16.000000Z"
+    },
+    {
+        "id": 2,
+        "image_url": "http://blog.chamaralabs.com/storage/carousel/1591023759.jpg",
+        "position": "2",
+        "web_url": "https://www.youtube.com",
+        "title": "YouTube",
+        "created_at": "2020-06-01T15:02:39.000000Z",
+        "updated_at": "2020-06-01T15:02:39.000000Z"
+    },
+    {
+        "id": 1,
+        "image_url": "http://blog.chamaralabs.com/storage/carousel/1591023594.png",
+        "position": "3",
+        "web_url": "https://www.facebook.com",
+        "title": "Facebook",
+        "created_at": "2020-06-01T14:59:54.000000Z",
+        "updated_at": "2020-06-01T15:06:16.000000Z"
+    },
+    {
+        "id": 4,
+        "image_url": "http://blog.chamaralabs.com/storage/carousel/1591023944.png",
+        "position": "4",
+        "web_url": "https://web.whatsapp.com",
+        "title": "WhatsApp",
+        "created_at": "2020-06-01T15:05:44.000000Z",
+        "updated_at": "2020-06-01T15:05:44.000000Z"
+    }
+]
