@@ -41,6 +41,12 @@
    <!-- Clients CSS -->
    <link rel="stylesheet" href="css/client.css">
 
+    <!-- Hover animation CSS -->
+    <link rel="stylesheet" href="css/animation.css">
+
+    <!-- Blog CSS -->
+    <link rel="stylesheet" href="css/blog.css">
+
    <!--Atom css-->
 
    <link rel="stylesheet" href="assets/css/theme.css">
@@ -75,11 +81,10 @@
          transition: transform .2s;
       }
 
-      .img-fluid:hover {
+      /*.img-fluid:hover {
          transition: .3s;
          transform: scale(1.5);
-      }
-
+      }*/
       .section {
          /* min-height: 100vh; */
          min-height: 800px;
@@ -106,7 +111,7 @@
          display: none;
       }
 
-      .post-body::-webkit-scrollbar {
+      .post-info::-webkit-scrollbar {
          display: none;
       }
 
@@ -375,6 +380,14 @@
          display: block;
          z-index: 10;
       } */
+      /*.case-img img{
+         overflow: hidden;
+      }
+
+      .case-img:hover img{
+         -webkit-transform: scale(1.1);
+         transform: scale(1.1);
+      }*/
    </style>
 
 
@@ -663,175 +676,232 @@
             <!-- End Col -->
          </div>
          <!-- End Row -->
-         <div class="row">
-            <div class="col-md-3">
-               <div class="tw-work-process">
+         <div class="row owl-carousel owl-theme" id="spot-list" style="margin-top: 75px">
+            <div class="col-md-3 ">
+               <div class="tw-work-process item">
                   <div class="process-wrapper d-table wow zoomIn" data-wow-duration="1s" data-wow-delay=".2s">
                      <div class="process-inner d-table-cell">
-                        <img src="images/icon/process1.png" alt="" id="feature" class="img-fluid">
+                           <div class="port" style="border-radius: 50%">
+                                 <img  src="images/team/expert1.jpg" id="feature" class="img-fluid" style="border-radius: 50%"/>
+                                <div class="work-text-content">
+                                  <h5 style="color:#fff">Low cost</h5>
+                                </div>
+                              </div>
+                        <!--img src="images/team/expert4.jpg" alt="" id="feature" class="img-fluid" style="border-radius: 50%"-->
 
                      </div>
                   </div>
                   <!-- End process wrapper -->
-                  <p>Low cost</p>
+                  <!--p>Low cost</p>
+                  <br-->
+               </div>
+               <!-- End Tw work process -->
+            </div>
+            <!-- End Col -->
+            <div class="col-md-3">
+               <div class="tw-work-process item">
+                  <div class="process-wrapper d-table wow zoomIn" data-wow-duration="1s" data-wow-delay=".2s">
+                     <div class="process-inner d-table-cell">
+                           <div class="port" style="border-radius: 50%">
+                                 <img  src="images/team/expert2.jpg" id="feature" class="img-fluid" style="border-radius: 50%"/>
+                                <div class="work-text-content">
+                                  <h5 style="color:#fff">High return on investment</h5>
+                                </div>
+                              </div>
+
+                     </div>
+                  </div>
+                  <!-- End process wrapper -->
+                  <!--p>High return on investment</p-->
+               </div>
+               <!-- End Tw work process -->
+            </div>
+            <!-- End Col -->
+            <div class="col-md-3">
+               <div class="tw-work-process item">
+                  <div class="process-wrapper d-table wow zoomIn" data-wow-duration="1s" data-wow-delay=".2s">
+                     <div class="process-inner d-table-cell">
+                           <div class="port" style="border-radius: 50%">
+                                 <img  src="images/team/expert3.jpg" id="feature" class="img-fluid" style="border-radius: 50%"/>
+                                <div class="work-text-content">
+                                  <h5 style="color:#fff">Convert Off-Peak to Peak Hours</h5>
+                                </div>
+                              </div>
+
+                     </div>
+                  </div>
+                  <!-- End process wrapper -->
+                  
+               </div>
+               <!-- End Tw work process -->
+            </div>
+            <!-- End Col -->
+            <div class="col-md-3">
+               <div class="tw-work-process item">
+                  <div class="process-wrapper d-table wow zoomIn" data-wow-duration="1s" data-wow-delay=".2s">
+                     <div class="process-inner d-table-cell">
+                           <div class="port" style="border-radius: 50%">
+                                 <img  src="images/team/expert4.jpg" id="feature" class="img-fluid" style="border-radius: 50%"/>
+                                <div class="work-text-content">
+                                  <h5 style="color:#fff">Easy to measure</h5>
+                                </div>
+                              </div>
+                     </div>
+                  </div>
+                  <!-- End process wrapper -->
+                  
+               </div>
+               <!-- End Tw work process -->
+            </div>
+            <!-- End Col -->
+            <div class="col-md-3">
+                  <div class="tw-work-process item">
+                     <div class="process-wrapper d-table wow zoomIn" data-wow-duration="1s" data-wow-delay=".2s">
+                        <div class="process-inner d-table-cell">
+                              <div class="port" style="border-radius: 50%">
+                                    <img  src="images/team/expert4.jpg" id="feature" class="img-fluid" style="border-radius: 50%"/>
+                                   <div class="work-text-content">
+                                     <h5 style="color:#fff">Real Time Results</h5>
+                                   </div>
+                                 </div>
+                        </div>
+                     </div>
+                     <!-- End process wrapper -->
+                     
+                  </div>
+                  <!-- End Tw work process -->
+               </div>
+            <div class="col-md-3">
+               <div class="tw-work-process item">
+                  <div class="process-wrapper d-table wow zoomIn" data-wow-duration="1s" data-wow-delay=".4s">
+                     <div class="process-inner d-table-cell">
+                           <div class="port" style="border-radius: 50%">
+                                 <img  src="images/team/expert2.jpg" id="feature" class="img-fluid" style="border-radius: 50%"/>
+                                <div class="work-text-content">
+                                  <h5 style="color:#fff">Brand development</h5>
+                                </div>
+                              </div>
+
+                     </div>
+                  </div>
+                  <!-- End process wrapper -->
+                  
                   <br>
                </div>
                <!-- End Tw work process -->
             </div>
             <!-- End Col -->
             <div class="col-md-3">
-               <div class="tw-work-process">
-                  <div class="process-wrapper d-table wow zoomIn" data-wow-duration="1s" data-wow-delay=".2s">
-                     <div class="process-inner d-table-cell">
-                        <img src="images/icon/process1.png" alt="" class="img-fluid">
-
-                     </div>
-                  </div>
-                  <!-- End process wrapper -->
-                  <p>High return on investment</p>
-               </div>
-               <!-- End Tw work process -->
-            </div>
-            <!-- End Col -->
-            <div class="col-md-3">
-               <div class="tw-work-process">
-                  <div class="process-wrapper d-table wow zoomIn" data-wow-duration="1s" data-wow-delay=".2s">
-                     <div class="process-inner d-table-cell">
-                        <img src="images/icon/process1.png" alt="" class="img-fluid">
-
-                     </div>
-                  </div>
-                  <!-- End process wrapper -->
-                  <p>Convert Off-Peak to Peak Hours</p>
-               </div>
-               <!-- End Tw work process -->
-            </div>
-            <!-- End Col -->
-            <div class="col-md-3">
-               <div class="tw-work-process">
-                  <div class="process-wrapper d-table wow zoomIn" data-wow-duration="1s" data-wow-delay=".2s">
-                     <div class="process-inner d-table-cell">
-                        <img src="images/icon/process1.png" alt="" class="img-fluid">
-
-                     </div>
-                  </div>
-                  <!-- End process wrapper -->
-                  <p>Easy to measure</p>
-               </div>
-               <!-- End Tw work process -->
-            </div>
-            <!-- End Col -->
-            <div class="col-md-3">
-               <div class="tw-work-process">
+               <div class="tw-work-process item">
                   <div class="process-wrapper d-table wow zoomIn" data-wow-duration="1s" data-wow-delay=".4s">
                      <div class="process-inner d-table-cell">
-                        <img src="images/icon/process1.png" alt="" class="img-fluid">
+                        <div class="port" style="border-radius: 50%">
+                              <img  src="images/team/expert3.jpg" id="feature" class="img-fluid" style="border-radius: 50%"/>
+                             <div class="work-text-content">
+                               <h5 style="color:#fff">Target ideal customers</h5>
+                             </div>
+                           </div>
 
                      </div>
                   </div>
                   <!-- End process wrapper -->
-                  <p>Real Time Results</p>
+                 
                </div>
                <!-- End Tw work process -->
             </div>
             <!-- End Col -->
             <div class="col-md-3">
-               <div class="tw-work-process">
+               <div class="tw-work-process item">
                   <div class="process-wrapper d-table wow zoomIn" data-wow-duration="1s" data-wow-delay=".4s">
                      <div class="process-inner d-table-cell">
-                        <img src="images/icon/process1.png" alt="" class="img-fluid">
+                           <div class="port" style="border-radius: 50%">
+                                 <img  src="images/team/expert4.jpg" id="feature" class="img-fluid" style="border-radius: 50%"/>
+                                <div class="work-text-content">
+                                  <h5 style="color:#fff">Geo-targeted Ads</h5>
+                                </div>
+                              </div>
 
                      </div>
                   </div>
                   <!-- End process wrapper -->
-                  <p>Brand development</p>
-                  <br>
+                
                </div>
                <!-- End Tw work process -->
             </div>
             <!-- End Col -->
             <div class="col-md-3">
-               <div class="tw-work-process">
-                  <div class="process-wrapper d-table wow zoomIn" data-wow-duration="1s" data-wow-delay=".4s">
-                     <div class="process-inner d-table-cell">
-                        <img src="images/icon/process1.png" alt="" class="img-fluid">
-
-                     </div>
-                  </div>
-                  <!-- End process wrapper -->
-                  <p>Target ideal customers</p>
-               </div>
-               <!-- End Tw work process -->
-            </div>
-            <!-- End Col -->
-            <div class="col-md-3">
-               <div class="tw-work-process">
-                  <div class="process-wrapper d-table wow zoomIn" data-wow-duration="1s" data-wow-delay=".4s">
-                     <div class="process-inner d-table-cell">
-                        <img src="images/icon/process1.png" alt="" class="img-fluid">
-
-                     </div>
-                  </div>
-                  <!-- End process wrapper -->
-                  <p>Geo-targeted Ads</p>
-               </div>
-               <!-- End Tw work process -->
-            </div>
-            <!-- End Col -->
-            <div class="col-md-3">
-               <div class="tw-work-process">
+               <div class="tw-work-process item">
                   <div class="process-wrapper d-table wow zoomIn" data-wow-duration="1s" data-wow-delay=".6s">
                      <div class="process-inner d-table-cell">
-                        <img src="images/icon/process1.png" alt="" class="img-fluid">
+                           <div class="port" style="border-radius: 50%">
+                                 <img  src="images/team/expert1.jpg" id="feature" class="img-fluid" style="border-radius: 50%"/>
+                                <div class="work-text-content">
+                                  <h5 style="color:#fff">Reach people at the start of the buying journey</h5>
+                                </div>
+                              </div>
 
                      </div>
                   </div>
                   <!-- End process wrapper -->
-                  <p>Reach people at the start of the buying journey</p>
-                  <br>
+                  
+                 
                </div>
                <!-- End Tw work process -->
             </div>
             <!-- End Col -->
             <div class="col-md-3">
-               <div class="tw-work-process">
+               <div class="tw-work-process item">
                   <div class="process-wrapper d-table wow zoomIn" data-wow-duration="1s" data-wow-delay=".6s">
                      <div class="process-inner d-table-cell">
-                        <img src="images/icon/process1.png" alt="" class="img-fluid">
+                           <div class="port" style="border-radius: 50%">
+                                 <img  src="images/team/expert2.jpg" id="feature" class="img-fluid" style="border-radius: 50%"/>
+                                <div class="work-text-content">
+                                  <h5 style="color:#fff">Easy to adjust & edit</h5>
+                                </div>
+                              </div>
 
                      </div>
                   </div>
                   <!-- End process wrapper -->
-                  <p>Easy to adjust & edit</p>
+                 
                </div>
                <!-- End Tw work process -->
             </div>
             <!-- End Col -->
             <div class="col-md-3">
-               <div class="tw-work-process">
+               <div class="tw-work-process item">
                   <div class="process-wrapper d-table wow zoomIn" data-wow-duration="1s" data-wow-delay=".6s">
                      <div class="process-inner d-table-cell">
-                        <img src="images/icon/process2.png" alt="" class="img-fluid">
+                           <div class="port" style="border-radius: 50%">
+                                 <img  src="images/team/expert3.jpg" id="feature" class="img-fluid" style="border-radius: 50%"/>
+                                <div class="work-text-content">
+                                  <h5 style="color:#fff">Easy to share</h5>
+                                </div>
+                              </div>
 
                      </div>
                   </div>
                   <!-- End Process Wrapper -->
-                  <p>Easy to share</p>
+                 
                </div>
                <!-- End Word Process -->
             </div>
             <!-- End Col -->
             <div class="col-md-3">
-               <div class="tw-work-process">
+               <div class="tw-work-process item">
                   <div class="process-wrapper d-table wow zoomIn" data-wow-duration="1s" data-wow-delay=".6s">
                      <div class="process-inner d-table-cell">
-                        <img src="images/icon/process3.png" alt="" class="img-fluid">
+                           <div class="port" style="border-radius: 50%">
+                                 <img  src="images/team/expert4.jpg" id="feature" class="img-fluid" style="border-radius: 50%"/>
+                                <div class="work-text-content">
+                                  <h5 style="color:#fff">Improves your conversion rate</h5>
+                                </div>
+                              </div>
 
                      </div>
                   </div>
                   <!-- End Process Wrapper -->
-                  <p>
-                     Improves your conversion rate</p>
+                
                </div>
                <!-- End Work Process -->
             </div>
@@ -856,7 +926,7 @@
             <!-- End Col -->
          </div>
          <!-- End Row -->
-         <div class="row">
+         <div class="row" style="margin-top: 75px">
             <div class="col-lg-3 col-md-12 text-center wow fadeInUp" data-wow-duration="1s" data-wow-delay=".4s">
                <div class="tw-case-study-box tw-case-study-box-1">
                   <div class="case-img study-bg-1">
@@ -941,20 +1011,23 @@
             <!-- End Col -->
          </div>
          <!-- End Row -->
-         <div class="row">
-
+         <div class="row owl-carousel owl-theme" id="indus-list" style="margin-top: 75px">
             <div class="col-md-3">
 
-               <div class="tw-work-process">
+               <div class="tw-work-process item">
                   <div class="process-wrapper d-table wow zoomIn" data-wow-duration="1s" data-wow-delay=".2s">
                      <div class="process-inner d-table-cell">
-                        <img src="images/icon/process1.png" alt="" class="img-fluid">
+                           <div class="port" style="border-radius: 50%">
+                                 <img  src="images/clients/1.jpg" id="feature" class="img-fluid" />
+                                <div class="work-text-content">
+                                  <h5 style="color:#fff">Food & Beverages</h5>
+                                </div>
+                              </div>
 
                      </div>
                   </div>
                   <!-- End process wrapper -->
-                  <p>Food & Beverages</p>
-                  <br>
+                  
                </div>
 
                <!-- End Tw work process -->
@@ -963,15 +1036,20 @@
 
             <div class="col-md-3">
 
-               <div class="tw-work-process">
+               <div class="tw-work-process item">
                   <div class="process-wrapper d-table wow zoomIn" data-wow-duration="1s" data-wow-delay=".2s">
                      <div class="process-inner d-table-cell">
-                        <img src="images/icon/process1.png" alt="" class="img-fluid">
+                           <div class="port" style="border-radius: 50%">
+                                 <img  src="images/clients/5.jpg" id="feature" class="img-fluid" style="border-radius: 50%"/>
+                                <div class="work-text-content">
+                                  <h5 style="color:#fff">Beauty</h5>
+                                </div>
+                              </div>
 
                      </div>
                   </div>
                   <!-- End process wrapper -->
-                  <p>Beauty</p>
+                 
                </div>
                <!-- End Tw work process -->
 
@@ -981,15 +1059,20 @@
             <!-- End Col -->
             <div class="col-md-3">
 
-               <div class="tw-work-process">
+               <div class="tw-work-process item">
                   <div class="process-wrapper d-table wow zoomIn" data-wow-duration="1s" data-wow-delay=".2s">
                      <div class="process-inner d-table-cell">
-                        <img src="images/icon/process1.png" alt="" class="img-fluid">
+                           <div class="port" style="border-radius: 50%">
+                                 <img  src="images/clients/3.jpg" id="feature" class="img-fluid" style="border-radius: 50%"/>
+                                <div class="work-text-content">
+                                  <h5 style="color:#fff">Fashion</h5>
+                                </div>
+                              </div>
 
                      </div>
                   </div>
                   <!-- End process wrapper -->
-                  <p>Fashion</p>
+                  
                </div>
                <!-- End Tw work process -->
 
@@ -999,15 +1082,20 @@
 
             <div class="col-md-3">
 
-               <div class="tw-work-process">
+               <div class="tw-work-process item">
                   <div class="process-wrapper d-table wow zoomIn" data-wow-duration="1s" data-wow-delay=".2s">
                      <div class="process-inner d-table-cell">
-                        <img src="images/icon/process1.png" alt="" class="img-fluid">
+                           <div class="port" style="border-radius: 50%">
+                                 <img  src="images/clients/4.jpg" id="feature" class="img-fluid" style="border-radius: 50%"/>
+                                <div class="work-text-content">
+                                  <h5 style="color:#fff">Travel</h5>
+                                </div>
+                              </div>
 
                      </div>
                   </div>
                   <!-- End process wrapper -->
-                  <p>Travel</p>
+                  
                </div>
                <!-- End Tw work process -->
 
@@ -1017,16 +1105,19 @@
 
             <div class="col-md-3">
 
-               <div class="tw-work-process">
+               <div class="tw-work-process item">
                   <div class="process-wrapper d-table wow zoomIn" data-wow-duration="1s" data-wow-delay=".4s">
                      <div class="process-inner d-table-cell">
-                        <img src="images/icon/process1.png" alt="" class="img-fluid">
-
+                           <div class="port" style="border-radius: 50%">
+                                 <img  src="images/clients/5.jpg" id="feature" class="img-fluid" style="border-radius: 50%"/>
+                                <div class="work-text-content">
+                                  <h5 style="color:#fff">Consumer Electronics</h5>
+                                </div>
+                              </div>
                      </div>
                   </div>
                   <!-- End process wrapper -->
-                  <p>
-                     Consumer Electronics</p>
+                  
                </div>
                <!-- End Tw work process -->
 
@@ -1036,16 +1127,20 @@
 
             <div class="col-md-3">
 
-               <div class="tw-work-process">
+               <div class="tw-work-process item">
                   <div class="process-wrapper d-table wow zoomIn" data-wow-duration="1s" data-wow-delay=".4s">
                      <div class="process-inner d-table-cell">
-                        <img src="images/icon/process1.png" alt="" class="img-fluid">
+                           <div class="port" style="border-radius: 50%">
+                                 <img  src="images/clients/6.jpg" id="feature" class="img-fluid" style="border-radius: 50%"/>
+                                <div class="work-text-content">
+                                  <h5 style="color:#fff">Fitness</h5>
+                                </div>
+                              </div>
 
                      </div>
                   </div>
                   <!-- End process wrapper -->
-                  <p>Fitness</p>
-                  <br>
+                  
                </div>
                <!-- End Tw work process -->
 
@@ -1055,15 +1150,20 @@
 
             <div class="col-md-3">
 
-               <div class="tw-work-process">
+               <div class="tw-work-process item">
                   <div class="process-wrapper d-table wow zoomIn" data-wow-duration="1s" data-wow-delay=".4s">
                      <div class="process-inner d-table-cell">
-                        <img src="images/icon/process1.png" alt="" class="img-fluid">
+                           <div class="port" style="border-radius: 50%">
+                                 <img  src="images/clients/7.jpg" id="feature" class="img-fluid" style="border-radius: 50%"/>
+                                <div class="work-text-content">
+                                  <h5 style="color:#fff">Pets</h5>
+                                </div>
+                              </div>
 
                      </div>
                   </div>
                   <!-- End process wrapper -->
-                  <p>Pets</p>
+                 
                </div>
                <!-- End Tw work process -->
 
@@ -1073,15 +1173,20 @@
 
             <div class="col-md-3">
 
-               <div class="tw-work-process">
+               <div class="tw-work-process item">
                   <div class="process-wrapper d-table wow zoomIn" data-wow-duration="1s" data-wow-delay=".4s">
                      <div class="process-inner d-table-cell">
-                        <img src="images/icon/process1.png" alt="" class="img-fluid">
+                           <div class="port" style="border-radius: 50%">
+                                 <img  src="images/clients/8.jpg" id="feature" class="img-fluid" style="border-radius: 50%"/>
+                                <div class="work-text-content">
+                                  <h5 style="color:#fff">Repairs</h5>
+                                </div>
+                              </div>
 
                      </div>
                   </div>
                   <!-- End process wrapper -->
-                  <p>Repairs</p>
+                  
                </div>
                <!-- End Tw work process -->
 
@@ -1091,16 +1196,20 @@
 
             <div class="col-md-3">
 
-               <div class="tw-work-process">
+               <div class="tw-work-process item">
                   <div class="process-wrapper d-table wow zoomIn" data-wow-duration="1s" data-wow-delay=".6s">
                      <div class="process-inner d-table-cell">
-                        <img src="images/icon/process1.png" alt="" class="img-fluid">
+                           <div class="port" style="border-radius: 50%">
+                                 <img  src="images/clients/9.jpg" id="feature" class="img-fluid" style="border-radius: 50%"/>
+                                <div class="work-text-content">
+                                  <h5 style="color:#fff">Services</h5>
+                                </div>
+                              </div>
 
                      </div>
                   </div>
                   <!-- End process wrapper -->
-                  <p>Services</p>
-                  <br>
+                  
                </div>
                <!-- End Tw work process -->
 
@@ -1109,16 +1218,20 @@
 
             <div class="col-md-3">
 
-               <div class="tw-work-process">
+               <div class="tw-work-process item">
                   <div class="process-wrapper d-table wow zoomIn" data-wow-duration="1s" data-wow-delay=".6s">
                      <div class="process-inner d-table-cell">
-                        <img src="images/icon/process1.png" alt="" class="img-fluid">
+                           <div class="port" style="border-radius: 50%">
+                                 <img  src="images/clients/1.jpg" id="feature" class="img-fluid" style="border-radius: 50%"/>
+                                <div class="work-text-content">
+                                  <h5 style="color:#fff">Real Estate</h5>
+                                </div>
+                              </div>
 
                      </div>
                   </div>
                   <!-- End process wrapper -->
-                  <p>Real Estate</p>
-                  <br>
+                  
                </div>
                <!-- End Tw work process -->
 
@@ -1126,16 +1239,20 @@
             <!-- End Col  -->
             <div class="col-md-3">
 
-               <div class="tw-work-process">
+               <div class="tw-work-process item">
                   <div class="process-wrapper d-table wow zoomIn" data-wow-duration="1s" data-wow-delay=".6s">
                      <div class="process-inner d-table-cell">
-                        <img src="images/icon/process1.png" alt="" class="img-fluid">
+                           <div class="port" style="border-radius: 50%">
+                                 <img  src="images/clients/5.jpg" id="feature" class="img-fluid" style="border-radius: 50%"/>
+                                <div class="work-text-content">
+                                  <h5 style="color:#fff">Education</h5>
+                                </div>
+                              </div>
 
                      </div>
                   </div>
                   <!-- End process wrapper -->
-                  <p>Education</p>
-                  <br>
+                  
                </div>
                <!-- End Tw work process -->
 
@@ -1166,57 +1283,50 @@
          </div>
          <!-- End Row -->
          <div class="row">
-            <div class="col-md-4">
-               <a href="technologies/tech1.html">
-                  <div class="tw-work-process">
-                     <div class="process-wrapper d-table wow zoomIn" data-wow-duration="1s" data-wow-delay=".2s">
-                        <div class="process-inner d-table-cell">
-                           <img src="images/icon/process1.png" alt="" class="img-fluid">
-
-                        </div>
-                     </div>
-                     <!-- End process wrapper -->
-                     <p>Geolocation</p>
+            <div class="col-lg-4 col-md-12 text-center wow fadeInUp" data-wow-duration="1s" data-wow-delay=".4s">
+               <div class="tw-case-study-box tw-case-study-box-1">
+                  <div class="case-img study-bg-1">
+                     <img src="images/cases/case-study1.png" alt="" class="img-fluid ">
                   </div>
-                  <!-- End Tw work process -->
-               </a>
-            </div>
-            <!-- End Col -->
-            <div class="col-md-4">
-               <a href="technologies/tech2.html">
-                  <div class="tw-work-process">
-                     <div class="process-wrapper d-table wow zoomIn" data-wow-duration="1s" data-wow-delay=".4s">
-                        <div class="process-inner d-table-cell">
-                           <img src="images/icon/process2.png" alt="" class="img-fluid">
-
-                        </div>
-                     </div>
-                     <!-- End Process Wrapper -->
-                     <p>Augmented Reality</p>
+                  <!-- End case img -->
+                  <div class="casestudy-content">
+                     <a href="technologies/tech1.html">
+                        <h4>Geolocation</h4>
+                     </a>
                   </div>
-               </a>
-               <!-- End Word Process -->
+               </div>
+               <!-- End case study box -->
             </div>
-            <!-- End Col -->
-            <div class="col-md-4">
-               <a href="technologies/tech3.html">
-                  <div class="tw-work-process">
-                     <div class="process-wrapper d-table wow zoomIn" data-wow-duration="1s" data-wow-delay=".6s">
-                        <div class="process-inner d-table-cell">
-                           <img src="images/icon/process3.png" alt="" class="img-fluid">
-
-                        </div>
-                     </div>
-                     <!-- End Process Wrapper -->
-                     <p>Beacon Technology</p>
+            <div class="col-lg-4 col-md-12 text-center wow fadeInUp" data-wow-duration="1s" data-wow-delay=".4s">
+               <div class="tw-case-study-box tw-case-study-box-2">
+                  <div class="case-img study-bg-2">
+                     <img src="images/cases/case-study2.png" alt="" class="img-fluid ">
                   </div>
-               </a>
-               <!-- End Work Process -->
+                  <!-- End case img -->
+                  <div class="casestudy-content">
+                     <a href="technologies/tech2.html">
+                        <h4>Augmented Reality</h4>
+                     </a>
+                  </div>
+               </div>
+               <!-- End case study box -->
             </div>
-            <!-- End Col -->
-
+            <div class="col-lg-4 col-md-12 text-center wow fadeInUp" data-wow-duration="1s" data-wow-delay=".4s">
+               <div class="tw-case-study-box tw-case-study-box-3">
+                  <div class="case-img study-bg-3">
+                     <img src="images/cases/case-study3.png" alt="" class="img-fluid ">
+                  </div>
+                  <!-- End case img -->
+                  <div class="casestudy-content">
+                     <a href="technologies/tech3.html">
+                        <h4>Beacon Technology</h4>
+                     </a>
+                  </div>
+               </div>
+               <!-- End case study box -->
+            </div>
          </div>
-         <!-- End Row -->
+         
       </div>
       <!-- End Container -->
    </section>
@@ -1258,31 +1368,7 @@
             
          </div>
          <section id="client-list" class="customer-logos slider">
-            <!--a href="#" class="slide" id="c1"><img src="images/clients/1.jpg"></a>
-            <a href="#" class="slide" id="c2"><img src="images/clients/2.png"></a>
-            <a href="#" class="slide" id="c3"><img src="images/clients/3.jpg"></a>
-            <a href="#" class="slide" id="c4"><img src="images/clients/4.jpg"></a>
-            <a href="#" class="slide" id="c5"><img src="images/clients/5.jpg"></a>
-            <a href="#" class="slide" id="c6"><img src="images/clients/6.jpg"></a>
-            <a href="#" class="slide" id="c7"><img src="images/clients/7.jpg"></a>
-            <a href="#" class="slide" id="c8"><img src="images/clients/8.jpg"></a>
-            <a href="#" class="slide" id="c9"><img src="images/clients/9.jpg"></a>
-            <a href="#" class="slide" id="c10"><img src="images/clients/1.jpg"></a>
-            <a href="#" class="slide" id="c11"><img src="images/clients/2.png"></a>
-            <a href="#" class="slide" id="c12"><img src="images/clients/3.jpg"></a>
-
-            <a href="#" class="slide"><img src="images/clients/1.jpg"></a>
-            <a href="#" class="slide"><img src="images/clients/2.png"></a>
-            <a href="#" class="slide"><img src="images/clients/3.jpg"></a>
-            <a href="#" class="slide"><img src="images/clients/4.jpg"></a>
-            <a href="#" class="slide"><img src="images/clients/5.jpg"></a>
-            <a href="#" class="slide"><img src="images/clients/6.jpg"></a>
-            <a href="#" class="slide"><img src="images/clients/7.jpg"></a>
-            <a href="#" class="slide"><img src="images/clients/8.jpg"></a>
-            <a href="#" class="slide"><img src="images/clients/9.jpg"></a>
-            <a href="#" class="slide"><img src="images/clients/1.jpg"></a>
-            <a href="#" class="slide"><img src="images/clients/2.png"></a>
-            <a href="#" class="slide"><img src="images/clients/3.jpg"></a-->
+            
 
 
 
@@ -1305,8 +1391,14 @@
             <!-- Col end -->
          </div>
          <!-- Row End -->
-         <div id="blog-list" class="row wow fadeInUp" data-wow-duration="1s" data-wow-delay=".2s">
-            
+         <div  class="row wow fadeInUp" data-wow-duration="1s" data-wow-delay=".2s">
+               <div class="col-md-12 remove-padding">
+                 <div class="owl-carousel owl-theme blog-slider" id="blog-list">
+                  </div>
+               </div>
+               <div class="col-md-12 text-center ">
+                     <a href="#" class="btn btn-primary">view all</a>
+                 </div>
          </div>
          <!-- End Row -->
       </div>
@@ -1604,6 +1696,7 @@
 <script src="js/app-functions.js"></script>
 <script src="js/app.js"></script>
 
+<script src="js/spot.js"></script>
 <script src="js/clients.js"></script>
 
 </body>

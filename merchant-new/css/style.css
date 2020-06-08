@@ -242,7 +242,7 @@ button:focus,
 
 /* Section Padding */
 section {
-  /* padding: 100px 0; */
+  padding: 100px 0;
   position: relative;
 }
 
@@ -1178,12 +1178,12 @@ li.dropdown:hover .tw-mega-menu {
       ========================*/
 .slider-items {
   height: 750px;
-  /* background-color: #f5f5f5; */
+  background-color: #f5f5f5;
 }
 
 .slider-items-new {
   height: 300px;
-  /* background-color: #f5f5f5; */
+  background-color: #f5f5f5;
 }
 
 
@@ -1558,17 +1558,10 @@ li.dropdown:hover .tw-mega-menu {
 .study-bg-6 {
   background: #478FFF;
 }
-
-.tw-case-study-box img{
-  transition: all .5s ease;
+.tw-case-study-box:hover {
+  /* transition: transform .2s;
+  transform: scale(1.1);  */
 }
-
-.tw-case-study-box:hover img{
-  transition: transform .5s;
-  transform: scale(1.1); 
-}
-
-
 .tw-case-study-box:hover .casestudy-content {
  
   -webkit-box-shadow: 0px 5px 20px 0px rgba(0, 0, 0, 0.06);
@@ -1664,10 +1657,13 @@ li.dropdown:hover .tw-mega-menu {
 
 .tw-work-process {
   text-align: center;
+  width: 250px;
+  margin: 0px;
+  
 }
 .tw-work-process p {
   font-weight: 600;
-  color: #fff;
+  color: rgb(0, 0, 0);
   font-size: 20px;
   margin-bottom: 0;
   margin-top: 23px;
@@ -1680,9 +1676,15 @@ li.dropdown:hover .tw-mega-menu {
   color: rgb(0, 0, 0);
 }
 
+.col-md-3{
+
+padding: 0%;
+
+}
+
 .process-wrapper {
   width: 200px;
-  background-color: #f7f9f8;
+  /* background-color: #f7f9f8; */
   height: 200px;
   border-radius: 50%;
   margin: 0 auto;
