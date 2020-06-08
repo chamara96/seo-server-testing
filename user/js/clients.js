@@ -86,7 +86,7 @@ $(document).ready(function () {
                             </p>
                         </div>
                         <!-- End Entry Content -->
-                        <a href="#" class="tw-readmore">Read More
+                        <a href="http://blog.chamaralabs.com/article/posts/${blogs[j].encode_id}" class="tw-readmore">Read More
                             <!--i class="fa fa-angle-right"></i-->
                         </a>
                     </div>
@@ -101,7 +101,7 @@ $(document).ready(function () {
             }
 
             var view = `<div class="col-md-12 text-center tw-mt-60">
-            <a href="#" class="btn btn-primary">view all</a>
+            <a href="http://blog.chamaralabs.com/jobs/jobposts/" class="btn btn-primary">view all</a>
         </div>`
 
         $("#job-list").append(view);
