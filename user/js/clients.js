@@ -86,7 +86,7 @@ $(document).ready(function () {
                             </p>
                         </div>
                         <!-- End Entry Content -->
-                        <a href="http://blog.chamaralabs.com/article/posts/${blogs[j].encode_id}" class="tw-readmore">Read More
+                        <a href="http://blog.chamaralabs.com/jobs/jobposts/${jobs[j].encode_id}" class="tw-readmore">Read More
                             <!--i class="fa fa-angle-right"></i-->
                         </a>
                     </div>
