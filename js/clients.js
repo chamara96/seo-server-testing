@@ -141,13 +141,13 @@ function setBlogs(blogs){
     <!-- End Tw Latest Post -->
 </div>
 <!-- End Col -->`;*/
-
+        
 
         html = `<div class="post item">
         <div class="post-img"> <img class="img-responsive" src="http://blog.chamaralabs.com/${blogs[j].featured_image}" alt=""/> </div>
         <div class="post-info" style="margin-left:0">
           <h3><a href="#">${blogs[j].name}</a></h3>
-          <h6>${monthNames[blogs[j].published_at.substring(5,7) - 1]} ${blogs[j].published_at.substring(8,10)}, 2017</h6>
+          <h6>${monthNames[blogs[j].published_at.substring(5,7) - 1]} ${blogs[j].published_at.substring(8,10)}, ${blogs[j].published_at.substring(0,4)}</h6>
           <p>${blogs[j].intro}</p>
           <a class="readmore" href="http://blog.chamaralabs.com/article/posts/${blogs[j].encode_id}/${blogs[j].slug}"><span>Read More</span></a> </div>
       </div>`;
