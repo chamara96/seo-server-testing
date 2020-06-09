@@ -8,7 +8,7 @@
     /*left: 50%;*/
     width: 100%;
     /* top: 36px; */
-    z-index: 20;
+    z-index: 101;
     /* padding-left: 10px; */
 }
 
@@ -135,7 +135,8 @@
 
 .nav-menu li li a, .nav-menu li:hover li a {
     padding: 8px 10px;
-    background: rgba(85, 85, 85, 0.26);
+    background: rgba(85, 85, 85, 0.7);
+    /* background: rgba(85, 85, 85, 0.26); */
     color: #FFF;
     font-size: 12px;
     line-height: normal;
@@ -144,31 +145,36 @@
 /* 2: hover/persistence */
 
 .nav-menu li:hover li a:hover, .nav-menu li:hover li a:focus, .nav-menu li:hover li:hover a {
-    background: rgb(87, 80, 80);
+    background: rgb(170, 136, 136);
+    /* background: rgb(87, 80, 80); */
 }
 
 /* 3 */
 
 .nav-menu li:hover li:hover li a {
-    background: rgba(68, 68, 68, 0.205);
+    background: rgba(68, 68, 68, 0.7);
+    /* background: rgba(68, 68, 68, 0.205); */
 }
 
 /* 3: hover/persistence */
 
 .nav-menu li:hover li:hover li a:hover, .nav-menu li:hover li:hover li a:focus, .nav-menu li:hover li:hover li:hover a {
-    background: rgb(87, 80, 80);
+    background: rgb(170, 136, 136);
+    /* background: rgb(87, 80, 80); */
 }
 
 /* 4 */
 
 .nav-menu li:hover li:hover li:hover li a {
-    background: rgba(68, 68, 68, 0.205);
+    background: rgba(68, 68, 68, 0.7);
+    /* background: rgba(68, 68, 68, 0.205); */
 }
 
 /* 4: hover */
 
 .nav-menu li:hover li:hover li:hover li a:hover, .nav-menu li:hover li:hover li:hover li a:focus {
-    background: rgb(87, 80, 80);
+    background: rgb(170, 136, 136);
+    /* background: rgb(87, 80, 80); */
 }
 
 /* vertical */

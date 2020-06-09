@@ -1,8 +1,8 @@
 $(function ($) {
     $(window).on('load', function () {
-       /* console.log("Windows on Load DONE");
-        //Main Code
-        console.log("Body Loaded");*/
+        /* console.log("Windows on Load DONE");
+         //Main Code
+         console.log("Body Loaded");*/
         svgdrawing();
 
         setTimeout(() => {
@@ -12,10 +12,10 @@ $(function ($) {
             $("svg").addClass("playanime");
             $("#landingDiv").addClass("playanime");
 
-            setTimeout(()=>{
+            setTimeout(() => {
                 $("#splashtag").fadeOut(2000);
-            },2000);
-            
+            }, 2000);
+
         }, 3000);
 
         setTimeout(() => {
@@ -23,13 +23,13 @@ $(function ($) {
             // $(".section").css("z-index", "-120");
             // $(".section").css("display", "block");
             $("#logo_img_div_desk").fadeIn(20);
-            
+
             // $("#mymenu a").fadeIn(2000);
             $("#landingDiv").delay(1000).fadeOut(2000);
             $("#landingDiv").css("display", "none");
-            
 
-            
+
+
 
         }, 9000);
 

@@ -32,9 +32,9 @@
 $(function ($) {
    "use strict";
 
-   $(window).on('load', function () {
-      menuFixed();
-   });
+   // $(window).on('load', function () {
+   //    menuFixed();
+   // });
 
    /* Navbar fixed */
 
@@ -59,9 +59,9 @@ $(function ($) {
          });
       }
    }
-   $(document).on('scroll', function () {
-      menuFixed();
-   });
+   // $(document).on('scroll', function () {
+   //    menuFixed();
+   // });
 
    /* Menu Active link*/
    $('.nav-item').on('click', function () {
@@ -69,7 +69,7 @@ $(function ($) {
       $(this).addClass('active');
    });
    /* DropDown Menu */
-  $("li.nav-item a").on("click", function () {
+   $("li.nav-item a").on("click", function () {
       $(this).parent("li").find(".dropdown-menu").slideToggle();
       // $(this).find("i").toggleClass("fa-angle-down fa-angle-up");
    });
@@ -79,11 +79,11 @@ $(function ($) {
       loop: true,
       autoplay: true,
       nav: true,
-      dots: false,
+      dots: true,
       autoplayTimeout: 8000,
       autoplayHoverPause: true,
       mouseDrag: false,
-      touchDrag:true,
+      touchDrag: true,
       smartSpeed: 1100,
       navText: ['<i class="icon icon-left-arrow2">', '<i class="icon icon-right-arrow2">'],
       responsive: {
@@ -416,12 +416,12 @@ $(function ($) {
             $message = $form.find('.form-message');
 
          $.post(action, {
-               name: $name.val(),
-               phone: $phone.val(),
-               email: $email.val(),
-               subject: $subject.val(),
-               message: $message.val()
-            },
+            name: $name.val(),
+            phone: $phone.val(),
+            email: $email.val(),
+            subject: $subject.val(),
+            message: $message.val()
+         },
             function (data) {
                $error.html(data);
                $error.slideDown('slow');
@@ -501,6 +501,8 @@ $(function ($) {
 
    /* Wow Initialize */
    new WOW().init();
+
+   // =======================
 
    /* Accordion */
    function toggleIcon(e) {
