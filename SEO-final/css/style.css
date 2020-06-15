@@ -360,7 +360,7 @@ section {
   display: block;
 }
 .column-title span {
-  color: #28b05f;
+  /*color: #28b05f;*/
 }
 .column-title:after {
   position: absolute;
