@@ -39,13 +39,13 @@
 	margin-top:50px;
 }
 
-.blog-slider .owl-nav.disabled {
+/*.blog-slider .owl-nav.disabled {
   display: block;
 }
 
 .blog-slider .owl-dots.disabled {
   display: block;
-}
+}*/
 
 .blog-slider .owl-nav {
     position: absolute;

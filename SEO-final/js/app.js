@@ -173,7 +173,7 @@ $(function ($) {
         loop: true,
         autoplay: true,
         nav: true,
-        dots: false,
+        dots: true,
         autoplayTimeout: 8000,
         autoplayHoverPause: true,
         mouseDrag: false,

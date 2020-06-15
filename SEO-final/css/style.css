@@ -1205,8 +1205,8 @@ li.dropdown:hover .tw-mega-menu {
   color: #28b05f;
 }
 .slider-content .slider-desc {
-  color: #868686;
-  font-size: 15px;
+  color: #fff;
+  /*font-size: 15px;*/
   margin-bottom: 30px;
 }
 
