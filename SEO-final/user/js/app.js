@@ -46,14 +46,14 @@ $(function ($) {
 
     $(document).ready(function () {
 
-        $("#main_div_id").sectionsnap({
+        /*$("#main_div_id").sectionsnap({
             'delay': 100,// time dilay (ms)
             'selector': ".section",// selector
             'reference': .9,// % of window height from which we start
             'animationTime': 400,// animation time (snap scrolling)
             'offsetTop': 0,// offset top (no snap before scroll reaches this position)
             'offsetBottom': 0// offset bottom (no snap after bottom - offsetBottom)
-        });
+        });*/
 
         //========================================== Start Copy from assets/js/owl-custom.js file============================
         /* ======= Owl Carousel ======= */
@@ -166,8 +166,22 @@ $(function ($) {
             success: function (res) {
                 jobs = res.data;
                 // console.log(blogs)
-                setBlogs(jobs);
-                setOwl();
+                setJobs(jobs);
+                setJobOwl();
+
+            }
+        });
+
+        var blogs = [];
+        $.ajax({
+            url: "http://blog.chamaralabs.com/article/posts/index_data_user/",
+            type: 'GET',
+            dataType: 'json', // added data type
+            success: function (res) {
+                blogs = res.data;
+                // console.log(blogs)
+                setBlogs(blogs);
+                setBlogOwl();
 
             }
         });

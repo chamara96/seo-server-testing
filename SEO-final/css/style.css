@@ -250,6 +250,54 @@ section {
 .section-heading {
   margin-bottom: 80px;
 }
+.section-heading h1 {
+  color: #2f2c2c;
+  font-size: 44px;
+  font-weight: 600;
+  position: relative;
+}
+.section-heading h1 span {
+  color: #28b05f;
+}
+.section-heading h1:after {
+  position: absolute;
+  bottom: -23px;
+  width: 65px;
+  height: 3px;
+  content: "";
+  background: #000000;
+  left: 50%;
+  margin-left: -34px;
+}
+.section-heading.tw-text-white h1 {
+  color: #fff;
+  font-size: 44px;
+  font-weight: 600;
+  position: relative;
+}
+.section-heading.tw-text-white h1 small {
+  color: #fff;
+  font-size: 14px;
+  letter-spacing: 1.4px;
+  text-transform: uppercase;
+  font-weight: 300;
+  display: block;
+  margin-bottom: 14px;
+  font-family: 'Poppins', sans-serif;
+}
+.section-heading.tw-text-white h1 span {
+  color: #fff;
+}
+.section-heading.tw-text-white h1:after {
+  position: absolute;
+  bottom: -23px;
+  width: 65px;
+  height: 3px;
+  content: "";
+  background: #fff;
+  left: 50%;
+  margin-left: -34px;
+}
 .section-heading h2 {
   color: #2f2c2c;
   font-size: 44px;
@@ -510,7 +558,7 @@ section {
   z-index: auto;
 }
 .owl-carousel img {
-  width: auto !important;
+  width: auto ;
 }
 
 /* Carousel Black Dots */
@@ -1536,19 +1584,19 @@ li.dropdown:hover .tw-mega-menu {
 }
 
 .study-bg-1 {
-  background: #39DA8E;
+  background: #6296f8;
 }
 
 .study-bg-2 {
-  background: #F3B92C;
+  background: #ffc81b;
 }
 
 .study-bg-3 {
-  background: #FC8469;
+  background: #3f1906;
 }
 
 .study-bg-4 {
-  background: #F6576E;
+  background: #4b0d56;
 }
 
 .study-bg-5 {
@@ -1556,7 +1604,7 @@ li.dropdown:hover .tw-mega-menu {
 }
 
 .study-bg-6 {
-  background: #478FFF;
+  background: #4b0d56;
 }
 
 .tw-case-study-box img{
@@ -1682,7 +1730,7 @@ li.dropdown:hover .tw-mega-menu {
 
 .process-wrapper {
   width: 200px;
-  background-color: #f7f9f8;
+  /*background-color: #f7f9f8;*/
   height: 200px;
   border-radius: 50%;
   margin: 0 auto;
@@ -1690,11 +1738,13 @@ li.dropdown:hover .tw-mega-menu {
   transition: all 0.3s linear;
 }
 .process-wrapper:hover {
+  /*border-radius: 50%;*/
   -webkit-box-shadow: 0px 10px 15px 0px rgba(0, 0, 0, 0.12);
   box-shadow: 0px 10px 15px 0px rgba(0, 0, 0, 0.12);
 }
 
 .process-inner {
+  /*border-radius: 50%;*/
   vertical-align: middle;
   text-align: center;
   position: relative;

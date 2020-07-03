@@ -52,29 +52,23 @@
 
    <link rel="stylesheet" href="assets/plugins/owl-carousel/assets/owl.theme.default.min.css">
 
+   <link rel="stylesheet" href="css/editable.css">
+   
    <style>
       .section {
          min-height: 100vh;
-         /*min-height: 800px;*/
          position: relative;
          text-align: center;
          font-family: sans-serif, arial;
          margin: 0;
          padding-top: 50px
-            /* scroll-snap-align: start;
-         scroll-snap-stop: always; */
+          
       }
 
-
       html {
-         /* font-family: sans-serif; */
-         /* scroll-snap-type: mandatory; */
-
-         /* this not working on safari */
+         
          scroll-behavior: smooth;
-         /* scroll-snap-points-y: repeat(100vh); */
-         /*scroll-snap-type: y mandatory;*/
-
+         
       }
 
       /* remove scroll bar */
@@ -102,13 +96,13 @@
 
 
       .gradient-2 {
-         background-image: -webkit-linear-gradient(110deg, #49C4A4 10%, #97b832 90%), url("images/background/diamond_upholstery.png");
-         background-image: -moz-linear-gradient(110deg, #49C4A4 10%, #97b832 90%), url("images/background/diamond_upholstery.png");
-         background-image: -o-linear-gradient(110deg, #49C4A4 10%, #97b832 90%), url("images/background/diamond_upholstery.png");
-         background-image: linear-gradient(110deg, #49C4A4 10%, #97b832 90%), url("images/background/diamond_upholstery.png");
-         background-image: -ms-linear-gradient(110deg, #49C4A4 10%, #97b832 90%);
+         background-image: -webkit-linear-gradient(110deg, #ffffff 10%, #ffffff 90%), url("images/background/diamond_upholstery.png");
+         background-image: -moz-linear-gradient(110deg, #ffffff 10%, #ffffff 90%), url("images/background/diamond_upholstery.png");
+         background-image: -o-linear-gradient(110deg, #ffffff 10%, #ffffff 90%), url("images/background/diamond_upholstery.png");
+         background-image: linear-gradient(110deg, #ffffff 10%, #ffffff 90%), url("images/background/diamond_upholstery.png");
+         
          background-blend-mode: multiply;
-         color: #fff
+         /*color: #fff;*/
       }
 
       .gradient-3 {
@@ -218,11 +212,7 @@
          animation: second_opacity 3s .3s forwards;
       }
 
-      /* #logo_img_xxx:hover {
-       -webkit-filter: drop-shadow(12px 12px 7px rgba(255, 255, 255, 0.7));
-       filter: drop-shadow(12px 12px 7px rgba(255, 255, 255, 0.7)); */
-      /* box-shadow: 0px 0px 5px #fff; */
-      /* } */
+     
 
       .shadowfilter {
          -webkit-filter: drop-shadow(0px 0px 0px rgba(255, 255, 255, 0.80));
@@ -311,8 +301,7 @@
       .nav-menu>li:hover u,
       .nav-menu>li.active u {
          border-bottom: 2px solid;
-         /* -webkit-animation: fadeinout 2s linear forwards;
-       animation: fadeinout 2s linear forwards; */
+         
       }
 
       @-webkit-keyframes fadeinout {
@@ -352,343 +341,269 @@
 
    <header>
 
-    <div id="mobile_head" class="fixed-top pos-f-t">
-       <div class="collapse" id="navbarToggleExternalContent">
-          <div class="bg-dark p-4">
-             <h5 class="text-white h4">SEO</h5>
-             <table class="table table-sm">
-                <tbody>
-                   <tr>
-                      <td data-toggle="collapse" data-target="#navbarToggleExternalContent"
-                         aria-controls="navbarToggleExternalContent" aria-expanded="false"
-                         aria-label="Toggle navigation">
-                         <a href="#">Services</a>
-                      </td>
-                      <td data-toggle="collapse" data-target="#navbarToggleExternalContent"
-                         aria-controls="navbarToggleExternalContent" aria-expanded="false"
-                         aria-label="Toggle navigation">
-                         <a href="user/index.html">User</a>
-                      </td>
-                   </tr>
-                   <tr>
-                      <td data-toggle="collapse" data-target="#navbarToggleExternalContent"
-                         aria-controls="navbarToggleExternalContent" aria-expanded="false"
-                         aria-label="Toggle navigation">
-                         <a href="#">Industries</a>
-                      </td>
-                      <td data-toggle="collapse" data-target="#navbarToggleExternalContent"
-                         aria-controls="navbarToggleExternalContent" aria-expanded="false"
-                         aria-label="Toggle navigation">
-                         <a href="#">Blog</a>
-                      </td>
-                   </tr>
-                   <tr>
-                      <td data-toggle="collapse" data-target="#navbarToggleExternalContent"
-                         aria-controls="navbarToggleExternalContent" aria-expanded="false"
-                         aria-label="Toggle navigation">
-                         <a href="#">Technologies</a>
-                      </td>
-                      <td data-toggle="collapse" data-target="#navbarToggleExternalContent"
-                         aria-controls="navbarToggleExternalContent" aria-expanded="false"
-                         aria-label="Toggle navigation">
-                         <a href="about.html">About Us</a>
-                      </td>
-                   </tr>
-                   <tr>
-                      <td data-toggle="collapse" data-target="#navbarToggleExternalContent"
-                         aria-controls="navbarToggleExternalContent" aria-expanded="false"
-                         aria-label="Toggle navigation">
-                         <a href="#">Clients</a>
-                      </td>
-                      <td data-toggle="collapse" data-target="#navbarToggleExternalContent"
-                         aria-controls="navbarToggleExternalContent" aria-expanded="false"
-                         aria-label="Toggle navigation">
-                         <a href="#">Contact Us</a>
-                      </td>
-                   </tr>
-                </tbody>
-             </table>
-             <!-- <span class="text-muted">Toggleable via the navbar brand.</span> -->
-          </div>
-       </div>
-       <nav class="navbar navbar-dark bg-dark">
-          <button class="navbar-toggler" type="button" data-toggle="collapse"
-             data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent"
-             aria-expanded="false" aria-label="Toggle navigation">
-             <span class="navbar-toggler-icon"></span>
-          </button>
-       </nav>
-    </div>
-
-    <!-- mobile view center logo -->
-    <div id="logo_img_div_mobi"
-       style="margin-top: 10px;text-align: center;z-index: 100;position: fixed; width: 100%;">
-       <a style="padding: 0;" href="#"><img id="logo_img_xxx" class="shadowfilter" src="images/center_logo_new.png"
-             alt=""></a>
-    </div>
-    <!-- ------------------------ -->
-
-    <!-- desktop view center logo -->
-    <div id="logo_img_div_desk"
-       style="margin-top: 10px;text-align: center;z-index: 100;position: fixed; width: 100%;">
-       <a style="padding: 0;" href="#"><img id="logo_img_xxx" class="shadowfilter" src="images/center_logo_new.png"
-             alt=""></a>
-    </div>
-    <!-- ----------------------- -->
-
-    <nav style="z-index: 100;" id="newheader2" class="menu">
-       <ul class="nav-menu nav-center">
-          <li class="menu-item" id="sec-02"><a href="#"><u>Services</u></a>
-             <ul>
-                <!-- <li><a href="#">Sub Nav Link</a></li> -->
-                <li><a href="marketing.html">Marketing</a>
-                   <ul>
-                      <li><a href="spot_offer.html">Spot Offer App</a>
-                         <ul>
-                            <li><a href="delever_dynamic_offers.html">Deliver Dynamic Offers &
-                                  Promotions </a>
-                            <li><a href="intelligent_statistics.html">Intelligent
-                                  Statistics</a>
-                            </li>
-                            <li><a href="real_time_edits.html">Real Time edits</a></li>
-                            <li><a href="get_discovered.html.html">Get discovered</a></li>
-                            <li><a href="approve_reject_leads.html">Approve / Reject leads</a>
-                            </li>
-                            <li><a href="get_store_followers.html">Get store followers</a>
-                            </li>
-                            <li><a href="get_more_leads.html">Get more leads via price request
-                                  from
-                                  users</a></li>
-                            <li><a href="better_branding.html">Better Branding</a></li>
-                            <li><a href="spot/loyalty_offers.html">Loyalty Offers to attract repeat
-                                  customers</a></li>
-                                  <li><a href="one_click_chat.html">One click chat</a></li>
-                                  <li><a href="social_media_integration_for_larger_reach.html">
-                                        Social Media integration for larger reach</a></li>
-                         </ul>
-                      </li>
-                      <li><a href="lead_generation.html">Lead Generation</a></li>
-                      <li><a href="sm_marketing.html">Social Media Marketing</a></li>
-                      <li><a href="ppc.html">PPC</a></li>
-                      <li><a href="growth_hacking.html">Growth Hacking</a></li>
-                      <li><a href="web_analytics.html">Web Analytics</a></li>
-                      <li><a href="seo.html">SEO</a></li>
-                      <li><a href="sms_marketing.html">SMS Marketing</a></li>
-                      <li><a href="gmbt.html">GMBT</a></li>
-                   </ul>
-                </li>
-                <li><a href="strategy.html">Strategy</a>
-                   <ul>
-                      <li><a href="omni_channel.html">Omni Channel</a></li>
-                      <li><a href="digital_strategy.html">Digital Strategy</a></li>
-                      <li><a href="brand_strategy.html">Brand Strategy</a></li>
-                      <li><a href="market_research.html">Market Research</a></li>
-                   </ul>
-                </li>
-                <li><a href="design.html">Design</a>
-                   <ul>
-                      <li><a href="branding.html">Branding</a></li>
-                      <li><a href="logo_designing.html">Logo Designing</a></li>
-                      <li><a href="photo_video.html">Photography / Videograply </a></li>
-                      <li><a href="brocher_designing.html">Brocher Designing</a></li>
-                   </ul>
-                </li>
-                <li><a href="development.html">Development</a>
-                   <ul>
-                      <li><a href="website_development.html">Website Development</a></li>
-                      <li><a href="ar_vr.html">AR / VR</a></li>
-                      <li><a href="app_development.html">iOS/Android app Development</a></li>
-                   </ul>
-                </li>
-             </ul>
-          </li>
-          <li class="menu-item" id="sec-03"><a href="#"><u>Industries</u></a>
-             <!--ul>
-                   <li><a href="#">Sub Nav Link</a></li>
-                   <li><a href="#">Sub Nav Link</a>
-                       <ul>
-                           <li><a href="#">Sub Sub Nav Link</a></li>
-                           <li><a href="#">Sub Sub Nav Link</a></li>
-                           <li><a href="#">Sub Sub Nav Link</a></li>
-                       </ul>
-                   </li>
-                   <li><a href="#">Sub Nav Link</a></li>
-                   <li><a href="#">Sub Nav Link</a></li>
-               </ul-->
-          </li>
-          <li class="menu-item" id="sec-04"><a href="#"><u>Technologies</u></a>
-             <ul>
-                <li><a href="tech1.html">Geolocation</a></li>
-                <li><a href="tech2.html">Augmented Reality</a>
-                <li><a href="tech3.html">Beacon Technology</a>
-             </ul>
-          </li>
-          <li class="menu-item" id="sec-06"><a href="#"><u>Clients</u></a></li>
-
-
-          <li style="visibility: hidden;" class="menu-item"><a href="#">&nbsp;</a></li>
-
-          <!-- <li id="sec-00" class="menu-item active" style="text-align: center;"><a style="padding: 0;"
-               href="#"><img id="logo_img_xxx" class="shadowfilter" src="images/sss.png" alt=""></a></li> -->
-
-          <li class="menu-item"><a href="user/index.html"><u>User</u></a>
-             <!--ul class="sub-234">
-                   <li><a href="#">Sub Nav Link</a></li>
-                   <li><a href="#">Sub Nav Link</a> </li>
-                   <li><a href="#">Sub Nav Link</a></li>
-                   <li><a href="#">Sub Nav Link</a>
-                       <ul>
-                           <li><a href="#">Sub Sub Nav Link</a></li>
-                           <li><a href="#">Sub Sub Nav Link</a></li>
-                           <li><a href="#">Sub Sub Nav Link</a></li>
-                       </ul>
-                   </li>
-               </ul-->
-          </li>
-          <li class="menu-item" id="sec-07"><a href="#"><u>Blog</u></a></li>
-          <li class="menu-item"><a href="about.html"><u>About Us</u></a></li>
-          <li class="menu-item" id="sec-08"><a href="#"><u>Contact Us</u></a></li>
-       </ul>
-    </nav>
-
-
- </header>
-
-
-
-   <div id="main_div_id">
-
-
-
-
-
-
-      <section class=" gradient-1 section" style="min-height: 0vh">
-         <div id="banner-area" class="banner-area ">
-            <div class="container">
-               <div class="row">
-                  <div class="col-lg-4 col-md-6 ml-auto">
-                     <div class="banner-heading wow fadeInRight">
-                        <h1 class="banner-title" style="color: #2F2C2C;">About Us</h1>
-                        <ol class="breadcrumb">
-                           <!-- <li>Home</li>
-                     <li><a href="#">service</a></li> -->
-                        </ol>
-                     </div>
-                  </div>
-                  <!-- Col end -->
-               </div>
-               <!-- Row end -->
+      <div id="mobile_head" class="fixed-top pos-f-t">
+         <div class="collapse" id="navbarToggleExternalContent">
+            <div class="bg-dark p-4">
+               <h5 class="text-white h4">SEO</h5>
+               <table class="table table-sm">
+                  <tbody>
+                     <tr>
+                        <td data-toggle="collapse" data-target="#navbarToggleExternalContent"
+                           aria-controls="navbarToggleExternalContent" aria-expanded="false"
+                           aria-label="Toggle navigation">
+                           <a href="#">Services</a>
+                        </td>
+                        <td data-toggle="collapse" data-target="#navbarToggleExternalContent"
+                           aria-controls="navbarToggleExternalContent" aria-expanded="false"
+                           aria-label="Toggle navigation">
+                           <a href="user/index.html">User</a>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td data-toggle="collapse" data-target="#navbarToggleExternalContent"
+                           aria-controls="navbarToggleExternalContent" aria-expanded="false"
+                           aria-label="Toggle navigation">
+                           <a href="#">Industries</a>
+                        </td>
+                        <td data-toggle="collapse" data-target="#navbarToggleExternalContent"
+                           aria-controls="navbarToggleExternalContent" aria-expanded="false"
+                           aria-label="Toggle navigation">
+                           <a href="#">Blog</a>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td data-toggle="collapse" data-target="#navbarToggleExternalContent"
+                           aria-controls="navbarToggleExternalContent" aria-expanded="false"
+                           aria-label="Toggle navigation">
+                           <a href="#">Technologies</a>
+                        </td>
+                        <td data-toggle="collapse" data-target="#navbarToggleExternalContent"
+                           aria-controls="navbarToggleExternalContent" aria-expanded="false"
+                           aria-label="Toggle navigation">
+                           <a href="about.html">About Us</a>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td data-toggle="collapse" data-target="#navbarToggleExternalContent"
+                           aria-controls="navbarToggleExternalContent" aria-expanded="false"
+                           aria-label="Toggle navigation">
+                           <a href="#">Clients</a>
+                        </td>
+                        <td data-toggle="collapse" data-target="#navbarToggleExternalContent"
+                           aria-controls="navbarToggleExternalContent" aria-expanded="false"
+                           aria-label="Toggle navigation">
+                           <a href="#">Contact Us</a>
+                        </td>
+                     </tr>
+                  </tbody>
+               </table>
+              
             </div>
-            <!-- Container end -->
          </div>
-         <!-- Banner area end -->
-      </section>
+         <nav class="navbar navbar-dark bg-dark">
+            <button class="navbar-toggler" type="button" data-toggle="collapse"
+               data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent"
+               aria-expanded="false" aria-label="Toggle navigation">
+               <span class="navbar-toggler-icon"></span>
+            </button>
+         </nav>
+      </div>
+
+      <!-- mobile view center logo -->
+      <div id="logo_img_div_mobi"
+         style="margin-top: 10px;text-align: center;z-index: 105;position: fixed; left:40%;">
+         <a style="padding: 0;" href="/"><img id="logo_img_xxx" class="shadowfilter" src="images/center_logo_new.png"
+               alt=""></a>
+      </div>
+      <!-- ------------------------ -->
+
+      <!-- desktop view center logo -->
+      <div id="logo_img_div_desk"
+         style="margin-top: 10px;text-align: center;z-index: 105;position: fixed; left:47%;">
+         <a style="padding: 0;" href="/"><img id="logo_img_xxx" class="shadowfilter" src="images/center_logo_new.png"
+               alt=""></a>
+      </div>
+      <!-- ----------------------- -->
+
+      <nav style="z-index: 100;" id="newheader2" class="menu">
+         <ul class="nav-menu nav-center">
+            <li class="menu-item" id="sec-02"><a href="#"><u>Services</u></a>
+               <ul>
+                  <li><a href="marketing.html">Marketing</a>
+                     <ul>
+                        <li><a href="spot_offer.html">Spot Offer App</a>
+                           <ul>
+                              <li><a href="delever_dynamic_offers.html">Deliver Dynamic Offers &
+                                    Promotions </a>
+                              <li><a href="intelligent_statistics.html">Intelligent
+                                    Statistics</a>
+                              </li>
+                              <li><a href="real_time_edits.html">Real Time edits</a></li>
+                              <li><a href="get_discovered.html.html">Get discovered</a></li>
+                              <li><a href="approve_reject_leads.html">Approve / Reject leads</a>
+                              </li>
+                              <li><a href="get_store_followers.html">Get store followers</a>
+                              </li>
+                              <li><a href="get_more_leads.html">Get more leads via price request
+                                    from
+                                    users</a></li>
+                              <li><a href="better_branding.html">Better Branding</a></li>
+                              <li><a href="spot/loyalty_offers.html">Loyalty Offers to attract repeat
+                                    customers</a></li>
+                              <li><a href="one_click_chat.html">One click chat</a></li>
+                              <li><a href="social_media_integration_for_larger_reach.html">
+                                    Social Media integration for larger reach</a></li>
+                           </ul>
+                        </li>
+                        <li><a href="lead_generation.html">Lead Generation</a></li>
+                        <li><a href="sm_marketing.html">Social Media Marketing</a></li>
+                        <li><a href="ppc.html">PPC</a></li>
+                        <li><a href="growth_hacking.html">Growth Hacking</a></li>
+                        <li><a href="web_analytics.html">Web Analytics</a></li>
+                        <li><a href="seo.html">SEO</a></li>
+                        <li><a href="sms_marketing.html">SMS Marketing</a></li>
+                        <li><a href="gmbt.html">GMBT</a></li>
+                     </ul>
+                  </li>
+                  <li><a href="strategy.html">Strategy</a>
+                     <ul>
+                        <li><a href="omni_channel.html">Omni Channel</a></li>
+                        <li><a href="digital_strategy.html">Digital Strategy</a></li>
+                        <li><a href="brand_strategy.html">Brand Strategy</a></li>
+                        <li><a href="market_research.html">Market Research</a></li>
+                     </ul>
+                  </li>
+                  <li><a href="design.html">Design</a>
+                     <ul>
+                        <li><a href="branding.html">Branding</a></li>
+                        <li><a href="logo_designing.html">Logo Designing</a></li>
+                        <li><a href="photo_video.html">Photography / Videograply </a></li>
+                        <li><a href="brocher_designing.html">Brocher Designing</a></li>
+                     </ul>
+                  </li>
+                  <li><a href="development.html">Development</a>
+                     <ul>
+                        <li><a href="website_development.html">Website Development</a></li>
+                        <li><a href="ar_vr.html">AR / VR</a></li>
+                        <li><a href="app_development.html">iOS/Android app Development</a></li>
+                     </ul>
+                  </li>
+               </ul>
+            </li>
+            <li class="menu-item" id="sec-03"><a href="#"><u>Industries</u></a>
+             
+            </li>
+            <li class="menu-item" id="sec-04"><a href="#"><u>Technologies</u></a>
+               <ul>
+                  <li><a href="tech1.html">Geolocation</a></li>
+                  <li><a href="tech2.html">Augmented Reality</a>
+                  <li><a href="tech3.html">Beacon Technology</a>
+               </ul>
+            </li>
+            <li class="menu-item" id="sec-06"><a href="#"><u>Clients</u></a></li>
+
+
+            <li style="visibility: hidden;" class="menu-item"><a href="#">&nbsp;</a></li>
+
+           
+
+            <li class="menu-item"><a href="user/index.html"><u>User</u></a>
+            </li>
+            <li class="menu-item" id="sec-07"><a href="#"><u>Blog</u></a></li>
+            <li class="menu-item"><a href="about.html"><u>About Us</u></a></li>
+            <li class="menu-item" id="sec-08"><a href="#"><u>Contact Us</u></a></li>
+         </ul>
+      </nav>
+
+
+   </header>
 
 
 
-      <section id="main-container" class="gradient-2 section">
+
+
+
+
+
+
+
+   <section class="gradient-1 section" style="min-height: 0vh">
+      <div id="banner-area" class="about-banner-area" style="height: 300px;">
          <div class="container">
             <div class="row">
-               <div class="col-lg-6 col-md-12 wow fadeInRight intro-text-left" data-wow-duration="1s"
-                  style="visibility: visible; animation-duration: 1s; animation-name: fadeInRight;">
-                  <h2 class="column-title">We Solve <span>Online Marketing</span> Problems</h2>
-                  <p>
-                     Internet marketing SEO company offering innovati marketing solution to mid to large size companies
-                     across the globe. As a
-                     leader in SEO, web design. ecommerce, website conversion.
-                  </p>
-                  <ul class="intro-list">
+               <div class="col-lg-4 col-md-6 ml-auto">
+                  <div class="banner-heading wow fadeInRight">
+                     <h1 class="banner-title" style="color: #2F2C2C;">About Us</h1>
+                     <ol class="breadcrumb">
+                        <!-- <li>Home</li>
+                     <li><a href="#">service</a></li> -->
+                     </ol>
+                  </div>
+               </div>
+               <!-- Col end -->
+            </div>
+            <!-- Row end -->
+         </div>
+         <!-- Container end -->
+      </div>
+      <!-- Banner area end -->
+   </section>
+
+
+
+   <section id="main-container" class="gradient-2 section">
+      <div class="container">
+         <div class="row">
+            <div class="col-lg-12 col-md-12 wow fadeInRight intro-text-left" data-wow-duration="1s"
+               style="visibility: visible; animation-duration: 1s; animation-name: fadeInRight;">
+               <!--h2 class="column-title">We Solve <span>Online Marketing</span> Problems</h2-->
+               <p>
+                  Welcome to the Best 360 Degree Digital Marketing Company with an Online-to-Offline (O2O) platform
+                  helping offline retail brands & boutiques increase their store walk-ins and boost conversions. Spot
+                  Offers is not a traditional digital marketing company or an e-commerce company. We specialize in Omni
+                  commerce or Omni channel marketing where we help merchants to power their digital services by
+                  automatically converting traditional offline advertising into powerful online marketing campaigns.
+               </p><br>
+               <p>
+                  We are a group of professional digital marketers, designers, and developers. Our team has several
+                  years of experience up our sleeve to make a real impact in the digital world. We are committed to
+                  making your campaign a success. Our scope of coverage reaches all over the world as well as diverse
+                  industries.
+               </p><br>
+               <p>
+                  Some of the industries we work with include Food & Beverages, Fashion, Beauty, Education, Real Estate,
+                  Fitness, Travels, Repairs, Pets, and Services. We employ the most modern digital tools to ensure we
+                  give you the best service. We can help you with designing your website with an online store, a
+                  business app, and run a social media campaign amidst many other benefits. On the other hand, we don’t
+                  leave out the other essential digital marketing tools.
+               </p><br>
+               <p>
+                  We have an enviable reputation as we give out exclusive offers to both new and existing customers. You
+                  can get the latest trendy matters in digital marketing and business growth from us, primarily through
+                  our app. We desire to build a formidable future through the use of digital technology tools and
+                  strategies. Commit your digital campaign into our hands and let us make your dreams come true with
+                  measurable growth.
+               </p>
+               <!--ul class="intro-list">
                      <li>Internet marketing SEO company offering innovative designs</li>
                      <li>Marketing generate awareness, drive traffic, connect with</li>
-                  </ul>
-                  <a href="#" class="btn btn-primary tw-mt-40">learn more</a>
-                  <!-- Default Round Btn -->
-                  <a href="#" class="btn btn-secondary tw-mt-40">contact us</a>
-               </div>
-               <!-- End Col -->
-               <div class="col-lg-6 col-md-12 text-lg-right text-md-center wow fadeInLeft" data-wow-duration="1s"
+                  </ul-->
+               <!--a href="#" class="btn btn-primary tw-mt-40">learn more</a-->
+               <!-- Default Round Btn -->
+               <!--a href="#" class="btn btn-secondary tw-mt-40">contact us</a-->
+            </div>
+            <!-- End Col -->
+            <!--div class="col-lg-6 col-md-12 text-lg-right text-md-center wow fadeInLeft" data-wow-duration="1s"
                   style="visibility: visible; animation-duration: 1s; animation-name: fadeInLeft;">
                   <img src="images/about/about_image.png" alt="" class="img-fluid">
-               </div>
-               <!-- End Col -->
-            </div>
-            <!-- End Row -->
+               </div-->
+            <!-- End Col -->
          </div>
-         <!-- End Container -->
-      </section>
-      <!-- Main container end -->
-
-      <section id="tw-service-value" class="tw-service-value gradient-10 section">
-         <div class="container">
-            <div class="row">
-               <div class="col-lg-6 col-md-12 align-self-center">
-                  <img src="images/services/skill_image.png" alt="" class="img-fluid">
-               </div>
-               <div class="col-lg-6 col-md-12 ml-auto">
-                  <div class="tw-value-desc">
-                     <h2 class="column-title">Our working Skills</h2>
-                     <span class="animate-border border-offwhite tw-mt-20 tw-mb-35"></span>
-                     <p>
-                        It’s an approach that brings together the best of financial planning and the best of investment
-                        management. It’s an approach
-                        that has worked for families, trusts, foundations and other.
-                     </p>
-                  </div>
-                  <div class="row">
-                     <div class="col-md-3 text-center">
-                        <div class="percent-area">
-                           <div class="chart" data-percent="80">
-                              <p class="percent">80%</p>
-                           </div>
-                           <p>Optimizing</p>
-                           <!-- Chart end -->
-                        </div>
-                        <!-- Percent area end -->
-                     </div>
-                     <div class="col-md-3 text-center">
-                        <div class="percent-area">
-                           <div class="chart" data-percent="75">
-                              <p class="percent">75%</p>
-                           </div>
-                           <p>Advertising</p>
-                           <!-- Chart end -->
-                        </div>
-                        <!-- Percent area end -->
-                     </div>
-                     <div class="col-md-3 text-center">
-                        <div class="percent-area">
-                           <div class="chart" data-percent="70">
-                              <p class="percent">70%</p>
-                           </div>
-                           <p>Marketing</p>
-                           <!-- Chart end -->
-                        </div>
-                        <!-- Percent area end -->
-                     </div>
-                     <div class="col-md-3 text-center">
-                        <div class="percent-area">
-                           <div class="chart" data-percent="70">
-                              <p class="percent">70%</p>
-                           </div>
-                           <p>Planning</p>
-                           <!-- Chart end -->
-                        </div>
-                        <!-- Percent area end -->
-                     </div>
-                  </div>
-               </div>
-
-            </div>
-            <!-- Content Row End -->
-         </div>
-         <!-- Container End -->
-      </section>
-      <!-- Service Value End -->
-
-
-
-      
+         <!-- End Row -->
+      </div>
+      <!-- End Container -->
+   </section>
+   <!-- Main container end -->
 
 
 
@@ -701,12 +616,17 @@
 
 
 
-   </div>
 
 
 
 
-   
+
+
+
+
+
+
+
 
 
 

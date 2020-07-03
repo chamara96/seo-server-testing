@@ -333,3 +333,83 @@ a.readmore > span {
   #indus-list .owl-dots {
     margin-top: 30px;
   }
+
+
+  /*=============================================
+                       Single page Bottom list
+=============================================*/
+
+#bottom-list .owl-controls .owl-page span{
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  -webkit-transition: .2s linear;
+  -o-transition: .2s linear;
+  -moz-transition: .2s linear;
+  transition: .2s linear;
+  background:#e8e8e8;
+}
+
+#bottom-list .owl-controls .owl-page.active span, 
+#bottom-list .owl-controls .owl-page:hover span{
+  background-color:#212121;
+}
+
+#bottom-list .owl-controls {
+	margin-top:50px;
+}
+
+#bottom-list .owl-nav {
+    position: absolute;
+    top: 38%;
+    left: 0;
+    width: 100%;
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+#bottom-list .owl-nav button {
+    position: absolute;
+    left: 20px;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    line-height: 0 !important;
+    background: #FFB72F !important;
+    margin-top: -25px;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+  }
+  #bottom-list .owl-nav button i {
+    font-size: 30px;
+    color: #fff;
+  }
+
+  #bottom-list .owl-nav button span {
+    font-size: 30px;
+    color: #fff;
+  }
+
+  #bottom-list .owl-nav button.owl-next {
+    left: auto;
+    right: -60px;
+  }
+
+  #bottom-list .owl-nav button.owl-prev {
+    left: -60px;
+  }
+  #bottom-list .owl-nav button:hover {
+    background: #ec407a !important;
+  }
+  
+  #bottom-list:hover .owl-nav {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  #bottom-list .owl-dots {
+    margin-top: 30px;
+  }

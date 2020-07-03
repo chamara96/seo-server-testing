@@ -102,15 +102,14 @@
 
 
       .gradient-2 {
-         background-image: -webkit-linear-gradient(110deg, #49C4A4 10%, #97b832 90%), url("images/background/diamond_upholstery.png");
-         background-image: -moz-linear-gradient(110deg, #49C4A4 10%, #97b832 90%), url("images/background/diamond_upholstery.png");
-         background-image: -o-linear-gradient(110deg, #49C4A4 10%, #97b832 90%), url("images/background/diamond_upholstery.png");
-         background-image: linear-gradient(110deg, #49C4A4 10%, #97b832 90%), url("images/background/diamond_upholstery.png");
-         background-image: -ms-linear-gradient(110deg, #49C4A4 10%, #97b832 90%);
+         background-image: -webkit-linear-gradient(110deg, rgb(255, 255, 255) 10%, #ffffff 90%), url("images/background/diamond_upholstery.png");
+         background-image: -moz-linear-gradient(110deg, rgb(255, 255, 255) 10%, #ffffff 90%), url("images/background/diamond_upholstery.png");
+         background-image: -o-linear-gradient(110deg, rgb(255, 255, 255) 10%, #ffffff 90%), url("images/background/diamond_upholstery.png");
+         background-image: linear-gradient(110deg, rgb(255, 255, 255) 10%, #ffffff 90%), url("images/background/diamond_upholstery.png");
+         background-image: -ms-linear-gradient(110deg, rgb(255, 255, 255) 10%, #ffffff 90%);
          background-blend-mode: multiply;
          color: #fff
       }
-
       .gradient-3 {
          background-image: -webkit-linear-gradient(110deg, #38b6b8 10%, #99ced3 90%), url("images/background/diamond_upholstery.png");
          background-image: -moz-linear-gradient(110deg, #38b6b8 10%, #99ced3 90%), url("images/background/diamond_upholstery.png");
@@ -556,14 +555,14 @@
 
 
 
-   <div id="main_div_id">
+   <div id="">
 
 
 
 
 
 
-      <section class=" gradient-1 section" style="min-height: 0vh">
+      <section class=" gradient-1 section-banner">
          <div id="banner-area" class="banner-area ">
             <div class="container">
                <div class="row">
@@ -587,12 +586,12 @@
 
 
 
-      <section id="main-container" class="gradient-2 section">
+      <section id="main-container" class="gradient-2 section-para">
          <div class="container">
             <div class="row">
                <div class="col-lg-6 col-md-12 wow fadeInRight intro-text-left" data-wow-duration="1s"
                   style="visibility: visible; animation-duration: 1s; animation-name: fadeInRight;">
-                  <h2 class="column-title">We Solve <span>Online Marketing</span> Problems</h2>
+                  <h2 class="">We Solve <span>Online Marketing</span> Problems</h2>
                   <p>
                      Internet marketing SEO company offering innovati marketing solution to mid to large size companies
                      across the globe. As a
@@ -619,7 +618,7 @@
       </section>
       <!-- Main container end -->
 
-      <section id="tw-service-value" class="tw-service-value gradient-10 section">
+      <section id="tw-service-value" class="tw-service-value gradient-2 section-para">
          <div class="container">
             <div class="row">
                <div class="col-lg-6 col-md-12 align-self-center">
@@ -627,7 +626,7 @@
                </div>
                <div class="col-lg-6 col-md-12 ml-auto">
                   <div class="tw-value-desc">
-                     <h2 class="column-title">Our working Skills</h2>
+                     <h2 class="">Our working Skills</h2>
                      <span class="animate-border border-offwhite tw-mt-20 tw-mb-35"></span>
                      <p>
                         It’s an approach that brings together the best of financial planning and the best of investment
@@ -706,169 +705,218 @@
 
 
 
-   <div class="tw-slider-area owl-carousel gradient-3">
-
-      <!-- 1st Slider -->
-      <div class="slider-items-new gradient-3">
-         <div class="container">
-            <div class="row align-items-center">
-               <div class="col-md-6">
-                  <img src="images/cases/case-study1.png" alt="" class="img-fluid">
-               </div>
-               <div class="col-md-6">
-                  <div class="slider-content slide-text-right">
-                     <!-- <h1> Online <span>Marketing</span> Solutions </h1>
-                     <p class="slider-desc">Start working with an company that provide every thing you need to generate awareness, drive traffic,
-                        connect with customers, and increase.</p> -->
-                     <a href="spot_offer.html" class="btn btn-single">Spot Offer App</a>
-                  </div>
-                  <!-- Slider Content End -->
-               </div>
-               <!-- Col End -->
-            </div>
-            <!-- Row ENd -->
-         </div>
-         <!-- Container End -->
+   <section id="tw-work" menu-sec="sec-01"  class=" tw-work-area gradient-10 single-slider">
+      <div class="work-bg-pattern d-none d-lg-inline-block">
       </div>
-      <!-- slider 2 -->
-      <div class="slider-items-new gradient-3">
-         <div class="container">
-            <div class="row align-items-center">
-               <div class="col-md-6">
-                  <img src="images/cases/case-study2.png" alt="" class="img-fluid">
-               </div>
-               <div class="col-md-6">
-                  <div class="slider-content slide-text-right">
-                     <a href="lead_generation.html" class="btn btn-single">Lead Generation</a>
-                  </div>
-
-               </div>
-
-            </div>
-
+      <!-- End Work BG Pattern -->
+      <div class="container">
+         <div class="row text-center">
+            
+            <!-- End Col -->
          </div>
-
-      </div>
-      <!-- slider 3 -->
-      <div class="slider-items-new gradient-3">
-         <div class="container">
-            <div class="row align-items-center">
-               <div class="col-md-6">
-                  <img src="images/cases/case-study3.png" alt="" class="img-fluid">
-               </div>
-               <div class="col-md-6">
-                  <div class="slider-content slide-text-right">
-                     <a href="sm_marketing.html" class="btn btn-single">Social Media Marketing</a>
+         <!-- End Row -->
+         <div class="row owl-carousel owl-theme" id="bottom-list" style="margin-top: 75px">
+            <div>
+               <div class="tw-work-process item">
+                  <div class="process-wrapper d-table wow zoomIn" data-wow-duration="1s" data-wow-delay=".2s">
+                     <div class="process-inner d-table-cell">
+                        <div class="port" style="border-radius: 50%">
+                           <img src="images/team/expert1.jpg" id="feature" class="img-fluid"
+                              style="border-radius: 50%" />
+                           <div class="work-text-content">
+                              <h5 style="color:#fff">Spot Offer App</h5>
+                           </div>
+                        </div>
+                        <!--img src="images/team/expert4.jpg" alt="" id="feature" class="img-fluid" style="border-radius: 50%"-->
+   
+                     </div>
+   
                   </div>
-
+                  <!-- End process wrapper -->
+   
+   
+                 <a href="spot_offer.html"> <p>Spot Offer App</p></a>
+   
+   
                </div>
-
+               <!-- End Tw work process -->
             </div>
-
-         </div>
-
-      </div>
-      <!-- slider 4 -->
-      <div class="slider-items-new gradient-3">
-         <div class="container">
-            <div class="row align-items-center">
-               <div class="col-md-6">
-                  <img src="images/cases/case-study4.png" alt="" class="img-fluid">
-               </div>
-               <div class="col-md-6">
-                  <div class="slider-content slide-text-right">
-                     <a href="ppc.html" class="btn btn-single">PPC</a>
+            <!-- End Col -->
+            <div>
+               <div class="tw-work-process item">
+                  <div class="process-wrapper d-table wow zoomIn" data-wow-duration="1s" data-wow-delay=".2s">
+                     <div class="process-inner d-table-cell">
+                        <div class="port" style="border-radius: 50%">
+                           <img src="images/team/expert2.jpg" id="feature" class="img-fluid"
+                              style="border-radius: 50%" />
+                           <div class="work-text-content">
+                              <h5 style="color:#fff">Lead Generation</h5>
+                           </div>
+                        </div>
+   
+                     </div>
                   </div>
-
+                  <!-- End process wrapper -->
+                 <a href="lead_generation.html"> <p>Lead Generation</p></a>
                </div>
-
+               <!-- End Tw work process -->
             </div>
-
-         </div>
-
-      </div>
-      <!-- slider 5 -->
-      <div class="slider-items-new gradient-3">
-         <div class="container">
-            <div class="row align-items-center">
-               <div class="col-md-6">
-                  <img src="images/cases/case-study5.png" alt="" class="img-fluid">
-               </div>
-               <div class="col-md-6">
-                  <div class="slider-content slide-text-right">
-                     <a href="web_analytics.html" class="btn btn-single">Growth Hacking</a>
+            <!-- End Col -->
+            <div>
+               <div class="tw-work-process item">
+                  <div class="process-wrapper d-table wow zoomIn" data-wow-duration="1s" data-wow-delay=".2s">
+                     <div class="process-inner d-table-cell">
+                        <div class="port" style="border-radius: 50%">
+                           <img src="images/team/expert3.jpg" id="feature" class="img-fluid"
+                              style="border-radius: 50%" />
+                           <div class="work-text-content">
+                              <h5 style="color:#fff">Social Media Marketing</h5>
+                           </div>
+                        </div>
+   
+                     </div>
                   </div>
-
+                  <!-- End process wrapper -->
+                  <a href="sm_marketing.html"><p>Social Media Marketing</p></a>
                </div>
-
+               <!-- End Tw work process -->
             </div>
-
-         </div>
-
-      </div>
-      <!-- slider 6 -->
-      <div class="slider-items-new gradient-3">
-         <div class="container">
-            <div class="row align-items-center">
-               <div class="col-md-6">
-                  <img src="images/cases/case-study6.png" alt="" class="img-fluid">
-               </div>
-               <div class="col-md-6">
-                  <div class="slider-content slide-text-right">
-                     <a href="web_analytics.html" class="btn btn-single">Web Analytics</a>
+            <!-- End Col -->
+            <div>
+               <div class="tw-work-process item">
+                  <div class="process-wrapper d-table wow zoomIn" data-wow-duration="1s" data-wow-delay=".2s">
+                     <div class="process-inner d-table-cell">
+                        <div class="port" style="border-radius: 50%">
+                           <img src="images/team/expert3.jpg" id="feature" class="img-fluid"
+                              style="border-radius: 50%" />
+                           <div class="work-text-content">
+                              <h5 style="color:#fff">PPC</h5>
+                           </div>
+                        </div>
+   
+                     </div>
                   </div>
-
+                  <!-- End process wrapper -->
+                 <a href="ppc.html"> <p>PPC</p></a>
                </div>
-
+               <!-- End Tw work process -->
             </div>
-
-         </div>
-
-      </div>
-      <!-- slider 7 -->
-      <div class="slider-items-new gradient-3">
-         <div class="container">
-            <div class="row align-items-center">
-               <div class="col-md-6">
-                  <img src="images/cases/case-study1.png" alt="" class="img-fluid">
-               </div>
-               <div class="col-md-6">
-                  <div class="slider-content slide-text-right">
-                     <a href="seo.html" class="btn btn-single">SEO</a>
+            <!-- End Col -->
+            <div>
+               <div class="tw-work-process item">
+                  <div class="process-wrapper d-table wow zoomIn" data-wow-duration="1s" data-wow-delay=".2s">
+                     <div class="process-inner d-table-cell">
+                        <div class="port" style="border-radius: 50%">
+                           <img src="images/team/expert3.jpg" id="feature" class="img-fluid"
+                              style="border-radius: 50%" />
+                           <div class="work-text-content">
+                              <h5 style="color:#fff">Growth Hacking</h5>
+                           </div>
+                        </div>
+   
+                     </div>
                   </div>
-
+                  <!-- End process wrapper -->
+                 <a href="growth_hacking.html"> <p>Growth Hacking</p></a>
                </div>
-
+               <!-- End Tw work process -->
             </div>
-
-         </div>
-
-      </div>
-      <!-- slider 8 -->
-      <div class="slider-items-new gradient-3">
-         <div class="container">
-            <div class="row align-items-center">
-               <div class="col-md-6">
-                  <img src="images/cases/case-study2.png" alt="" class="img-fluid">
-               </div>
-               <div class="col-md-6">
-                  <div class="slider-content slide-text-right">
-                     <a href="sms_marketing.html" class="btn btn-single">SMS Marketing</a>
+            <!-- End Col -->
+            <div>
+               <div class="tw-work-process item">
+                  <div class="process-wrapper d-table wow zoomIn" data-wow-duration="1s" data-wow-delay=".2s">
+                     <div class="process-inner d-table-cell">
+                        <div class="port" style="border-radius: 50%">
+                           <img src="images/team/expert3.jpg" id="feature" class="img-fluid"
+                              style="border-radius: 50%" />
+                           <div class="work-text-content">
+                              <h5 style="color:#fff">SEO</h5>
+                           </div>
+                        </div>
+   
+                     </div>
                   </div>
-
+                  <!-- End process wrapper -->
+                 <a href="seo.html"> <p>SEO</p></a>
                </div>
-
+               <!-- End Tw work process -->
             </div>
-
+            <!-- End Col -->
+            <div>
+               <div class="tw-work-process item">
+                  <div class="process-wrapper d-table wow zoomIn" data-wow-duration="1s" data-wow-delay=".2s">
+                     <div class="process-inner d-table-cell">
+                        <div class="port" style="border-radius: 50%">
+                           <img src="images/team/expert3.jpg" id="feature" class="img-fluid"
+                              style="border-radius: 50%" />
+                           <div class="work-text-content">
+                              <h5 style="color:#fff">Web Analytics</h5>
+                           </div>
+                        </div>
+   
+                     </div>
+                  </div>
+                  <!-- End process wrapper -->
+                <a href="web_analytics.html">  <p>Web Analytics</p></a>
+               </div>
+               <!-- End Tw work process -->
+            </div>
+            <!-- End Col -->
+            <div>
+               <div class="tw-work-process item">
+                  <div class="process-wrapper d-table wow zoomIn" data-wow-duration="1s" data-wow-delay=".2s">
+                     <div class="process-inner d-table-cell">
+                        <div class="port" style="border-radius: 50%">
+                           <img src="images/team/expert3.jpg" id="feature" class="img-fluid"
+                              style="border-radius: 50%" />
+                           <div class="work-text-content">
+                              <h5 style="color:#fff">SMS Marketing</h5>
+                           </div>
+                        </div>
+   
+                     </div>
+                  </div>
+                  <!-- End process wrapper -->
+                 <a href="sms_marketing.html"> <p>SMS Marketing</p></a>
+               </div>
+               <!-- End Tw work process -->
+            </div>
+            <!-- End Col -->
+            <div>
+               <div class="tw-work-process item">
+                  <div class="process-wrapper d-table wow zoomIn" data-wow-duration="1s" data-wow-delay=".2s">
+                     <div class="process-inner d-table-cell">
+                        <div class="port" style="border-radius: 50%">
+                           <img src="images/team/expert3.jpg" id="feature" class="img-fluid"
+                              style="border-radius: 50%" />
+                           <div class="work-text-content">
+                              <h5 style="color:#fff">GMBT</h5>
+                           </div>
+                        </div>
+   
+                     </div>
+                  </div>
+                  <!-- End process wrapper -->
+                  <a href="gmbt.html"><p>GMBT</p></a>
+               </div>
+               <!-- End Tw work process -->
+            </div>
+            <!-- End Col -->
+           
+            
+           
+           
          </div>
-
+         <!-- End Row -->
       </div>
-
-
-   </div>
+      <!-- End Container -->
+   </section>
+   <!-- End Features section -->
    <!-- Slider Area End -->
-
-
+   
+   
+      
+   
 
 
 

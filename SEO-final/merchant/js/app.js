@@ -46,14 +46,8 @@ $(function ($) {
 
     $(document).ready(function () {
 
-        $("#main_div_id").sectionsnap({
-            'delay': 100,// time dilay (ms)
-            'selector': ".section",// selector
-            'reference': .9,// % of window height from which we start
-            'animationTime': 400,// animation time (snap scrolling)
-            'offsetTop': 0,// offset top (no snap before scroll reaches this position)
-            'offsetBottom': 0// offset bottom (no snap after bottom - offsetBottom)
-        });
+        $('.tp-leftarrow').append('<i id="me_s_left" class="icon icon-left-arrow2"></i>')
+        $('.tp-rightarrow').append('<i id="me_s_right" class="icon icon-right-arrow2"></i>')
 
         //========================================== Start Copy from assets/js/owl-custom.js file============================
         /* ======= Owl Carousel ======= */
@@ -85,19 +79,19 @@ $(function ($) {
             }
         });
 
-        /*var blogs = [];
+        var blogs = [];
         $.ajax({
-            url: "http://blog.chamaralabs.com/article/posts/index_data",
+            url: "http://blog.chamaralabs.com/article/posts/index_data_merchent/",
             type: 'GET',
             dataType: 'json', // added data type
             success: function (res) {
                 blogs = res.data;
                 // console.log(blogs)
                 setBlogs(blogs);
-                setOwl();
+                setBlogOwl();
 
             }
-        });*/
+        });
         //========================================== End Copy from js/client.js file============================
 
 

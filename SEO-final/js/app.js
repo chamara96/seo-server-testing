@@ -1,6 +1,6 @@
 $(function ($) {
     $(window).on('load', function () {
-        $('#logo-div').load('images/welcome-logo.svg');
+        /*$('#logo-div').load('images/welcome-logo.svg');
 
         setTimeout(() => {
             svgdrawing();
@@ -23,7 +23,7 @@ $(function ($) {
             $("#landingDiv").delay(1000).fadeOut(2000);
             $("#landingDiv").css("display", "none");
 
-        }, 7000);
+        }, 7000);*/
 
 
     });
@@ -46,14 +46,14 @@ $(function ($) {
 
     $(document).ready(function () {
 
-        $("#main_div_id").sectionsnap({
+        /*$("#main_div_id").sectionsnap({
             'delay': 100,// time dilay (ms)
             'selector': ".section",// selector
             'reference': .9,// % of window height from which we start
             'animationTime': 400,// animation time (snap scrolling)
             'offsetTop': 0,// offset top (no snap before scroll reaches this position)
             'offsetBottom': 0// offset bottom (no snap after bottom - offsetBottom)
-        });
+        });*/
 
         //========================================== Start Copy from assets/js/owl-custom.js file============================
         /* ======= Owl Carousel ======= */
@@ -69,7 +69,7 @@ $(function ($) {
     
          });*/
 
-        var owl = $('#home-slideshow');
+        /*var owl = $('#home-slideshow');
         owl.owlCarousel({
             autoplay: true,
             autoPlayTimeout: 6000,
@@ -102,9 +102,7 @@ $(function ($) {
 
 
 
-            /*$('.side-slideshow').slideUp(300, function() {
-              $( this ).remove();
-            });*/
+            
             $('#side-slideshow').empty();
             $('#side-slideshow').append(html);
             i++;
@@ -121,7 +119,7 @@ $(function ($) {
             items: 1,
             loop: true,
 
-        });
+        });*/
         //========================================== End Copy from assets/js/owl-custom.js file============================
 
 
@@ -129,6 +127,7 @@ $(function ($) {
         //========================================== Start Copy from js/spot.js file============================
         setSpotOwl();
         setIndustryOwl();
+        setBottomOwl();
         //========================================== End Copy from js/spot.js file============================
 
 
@@ -149,7 +148,7 @@ $(function ($) {
 
         var blogs = [];
         $.ajax({
-            url: "http://blog.chamaralabs.com/article/posts/index_data",
+            url: "http://blog.chamaralabs.com/article/posts/index_data_merchent/",
             type: 'GET',
             dataType: 'json', // added data type
             success: function (res) {
@@ -171,7 +170,7 @@ $(function ($) {
     $(".tw-slider-area").owlCarousel({
         items: 1,
         loop: true,
-        autoplay: true,
+        autoplay: false,
         nav: true,
         dots: true,
         autoplayTimeout: 8000,
